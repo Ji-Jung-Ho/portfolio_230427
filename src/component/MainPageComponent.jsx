@@ -101,7 +101,7 @@ export default function MainComponent () {
         setIsKurlyTeam(true);
         setIsNavKurlyReact(false);
         setIsNavMyPage(false);
-      } else if (scrollY >= 3154 && scrollY <= 3887) {
+      } else if (scrollY >= 3154 && scrollY <= 3888) {
         setIsNavAboutme(false);
         setIsNavEducation(false);
         setIsNavWork(false);
@@ -110,7 +110,7 @@ export default function MainComponent () {
         setIsKurlyTeam(false);
         setIsNavKurlyReact(true);
         setIsNavMyPage(false);
-      } else if (scrollY >= 3888 && scrollY <= 4547) {
+      } else if (scrollY >= 3889 && scrollY <= 4547) {
         setIsNavAboutme(false);
         setIsNavEducation(false);
         setIsNavWork(false);
@@ -160,6 +160,7 @@ export default function MainComponent () {
           </Fade>
             <article className="sec1-article">
               <div className="img-box">
+              <img src="./img/jungho_bgimg.jpg" alt="" />
               </div>
               <div className="main-title">
                   <Fade top duration={2000} delay={1000}>

@@ -10,7 +10,7 @@ export default function WrapComponent() {
   return (
     <div id="wrap">
       {
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
             {/* <Route path='/' element={<HeaderComponent/>}/> */}
             <Route path='/' element={<MainPageComponent/> }/>

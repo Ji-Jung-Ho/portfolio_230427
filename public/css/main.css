@@ -3,18 +3,21 @@
 }
 #main #section1 {
   width: 100%;
+  height: 100vh;
   position: relative;
   display: flex;
   background-color: #202224;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  overflow: hidden;
 }
 #main #section1 .sec1-aside {
-  flex-grow: 0;
-  flex-basis: 20%;
+  width: 25vw;
+  height: 100%;
   position: relative;
+  z-index: 10;
+  background-color: #202224;
 }
 #main #section1 .sec1-aside .menu-bar {
   display: flex;
@@ -94,22 +97,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 0;
-  flex-basis: 80%;
-  height: 100vh;
+  width: 100vw;
+  height: 100%;
   position: relative;
 }
 #main #section1 .sec1-article .img-box {
-  width: 1228px;
-  opacity: 0.4;
-  height: 100vh;
-  background: url(../img/jungho_bgimg.jpg) no-repeat 50% 100%;
-  background-size: cover;
   position: fixed;
+  left: 20%;
+  top: 0px;
+  opacity: 0.5;
+  width: 100vw;
+}
+#main #section1 .sec1-article .img-box img {
+  width: 80vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #main #section1 .sec1-article .main-title {
   color: #fff;
-  position: relative;
 }
 #main #section1 .sec1-article .main-title .info-subtitle {
   display: flex;
@@ -146,6 +152,7 @@
   width: 50px;
   position: absolute;
   top: 83%;
+  left: 46%;
   animation: bounce 1.5s ease 0s infinite normal none running;
 }
 @keyframes bounce {
@@ -173,9 +180,8 @@
 }
 #main #section2 .sec2-aside {
   display: flex;
-  flex-basis: 20%;
+  width: 20vw;
   height: 100vh;
-  flex-grow: 0;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
@@ -240,8 +246,7 @@
   color: #ffc98e;
 }
 #main #section2 .sec2-article {
-  flex-basis: 80%;
-  flex-grow: 0;
+  width: 80vw;
   overflow: hidden;
   padding: 40px 40px 0 40px;
   background-color: #FDF8F2;
