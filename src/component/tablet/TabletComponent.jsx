@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
+import {Fade, Flip} from 'react-reveal';
 import 'swiper/swiper-bundle.css';
-import './css/tabletmain.css'
+import './css/tablet_main.css'
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -22,8 +23,6 @@ export default function TabletComponent () {
   const [isNavKurlyTeam, setIsKurlyTeam]= useState(false);
   const [isNavKurlyReact, setIsNavKurlyReact]= useState(false);
   const [isNavMyPage, setIsNavMyPage]= useState(false);
-
-  // const [isVisible, setIsVisible] = useState(false);
 
   const [scroll, setScrool] = useState(0);
 
@@ -162,23 +161,27 @@ export default function TabletComponent () {
             </aside>
             <article className="sec1-article">
               <div className="img-box">
-                <img src="./img/jungho_bgimg.jpg" alt="" />
               </div>
               <div className="main-title">
+                  <Fade top duration={2000} delay={1000} fraction={0.9}>
                   <h2 className='info'>상상을 구현하는</h2>
+                  </Fade>
+                  <Flip top duration={1000} delay={2000} fraction={0.9}>
                   <h2 className='info-name'>
                     <span>지정호</span> 입니다.
                   </h2>
+                  </Flip>
+                  <Fade bottom duration={2000} delay={1000} fraction={0.9}>
                   <div className='info-subtitle'>
                     <span>프론트앤드 개발자를 목표로 노력하고 있습니다.</span>
                     <span>부족한 부분을 하나씩 채워가는 재미를 즐깁니다.</span>
                     <span>: 인생을 긍정적으로 살아가자라는 좌우명을 가지고 있습니다.</span>
                   </div>
+                  </Fade>
               </div>
               <div className="down-arrow">
                 <img src="./img/56747.png" alt="" />
               </div>
-
             </article>
         </section>
         <section id="section2" className='main-content'>
@@ -211,36 +214,38 @@ export default function TabletComponent () {
             </nav>
           </aside>
           <article className='sec2-article'>
-            <div className="main-title">
-              <h1><span>ABOUT ME</span></h1>
-            </div>
-            <div className="about-row-box">
-              <div className="about-me">
-                <div className="row1-left">
-                  <div className="name">
-                    <img src="./img/user-info.png" alt="name" />
-                    <h2>이름</h2>
+            <div className="about-me">
+              <div className="main-title">
+                <h1><span>ABOUT ME</span></h1>
+              </div>
+              <div className="about-row-box">
+                <div className="about-me">
+                  <div className="row1-left">
+                    <div className="name">
+                      <img src="./img/user-info.png" alt="name" />
+                      <h2>이름</h2>
+                    </div>
+                    <div className="detail">
+                        <p>지정호</p>
+                    </div>
                   </div>
-                  <div className="detail">
-                      <p>지정호</p>
+                  <div className="row1-center">
+                    <div className="birth">
+                      <img src="./img/birth.png" alt="name" />
+                      <h2>생년월일</h2>
+                    </div>
+                    <div className="detail">
+                        <p>1996.09.04</p>
+                    </div>
                   </div>
-                </div>
-                <div className="row1-center">
-                  <div className="birth">
-                    <img src="./img/birth.png" alt="name" />
-                    <h2>생년월일</h2>
-                  </div>
-                  <div className="detail">
-                      <p>1996.09.04</p>
-                  </div>
-                </div>
-                <div className="row1-right">
-                <div className="phone-number">
-                    <img src="./img/phone-number.png" alt="name" />
-                    <h2>전화번호</h2>
-                  </div>
-                  <div className="detail">
-                      <p>010-5501-7918</p>
+                  <div className="row1-right">
+                  <div className="phone-number">
+                      <img src="./img/phone-number.png" alt="name" />
+                      <h2>전화번호</h2>
+                    </div>
+                    <div className="detail">
+                        <p>010-5501-7918</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -294,96 +299,95 @@ export default function TabletComponent () {
               <h1><span>SKILLS</span></h1>
             </div>
             <div className="skill-content">
-              <div className="skill-row-1">
+              <div className="skill-column-1">
                 <div className={frontendTextUi ? "content-box frontend on" : "content-box frontend"} onClick={onClickToggleFrontend}>
                   <p className='content-title'>Frontend</p>
-                  <img src="./img/frontend.png" alt="frontend-skills-img" />
+                  <img src="./img/frontend.png" className='frontend-img' alt="frontend-skills-img" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>HTML5, CSS3, JS(ES6)</h2>
                       <div className="detail-box">
-                        <p>
-                        - HTML 시맨틱 태그 지키기 가능 <br/>
-                        - CSS의 유형별 선언 및 사용 <br/>
-                        - Flex속성 활용 가능 <br/>
-                        - JavaScript, jQuery를 활용하여 동적인 웹 페이지 구축 가능 <br/>
-                        - jQuery를 활용하여 이벤트 구현 가능 <br/>
-                        - Ajax를 이용하여 비동기 방식으로 웹 페이지 구축 가능 <br/>
-                        </p>
+                       <h2>HTML5, CSS3, JS(ES6)</h2>
+                        <ul>
+                        <li>- HTML 시맨틱 태그 지키기 가능</li>
+                        <li>- CSS의 유형별 선언 및 사용</li>
+                        <li>- Flex속성 활용 가능</li>
+                        <li>- JavaScript, jQuery를 활용하여 동적인 웹 페이지 구축 가능</li>
+                        <li>- jQuery를 활용하여 이벤트 구현 가능</li>
+                        <li>- Ajax를 이용하여 비동기 방식으로 웹 페이지 구축 가능</li>
+                        </ul>
                       </div>
-                      <h2>React</h2>
-                        <div className="detail-box">
-                          <p>
-                          - 리액트 개발환경 설정과 Virtual DOM 개념 이해 <br/>
-                          - JSX, TSX 사용과 함수형 컴포넌트 작성 가능 <br/>
-                          - TypeScript를 사용하여 변수 타입 명시 가능 <br/>
-                          - state, props 개념 및 데이터의 흐름 이해 <br/>
-                          - Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험 <br/>
-                          - Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능 <br/>
-                          - React-router-dom을 사용한 페이지 이동 구현
-                          </p>
-                        </div>
+                      <div className="detail-box">
+                        <h2>React</h2>
+                        <ul>
+                        <li>- 리액트 개발환경 설정과 Virtual DOM 개념 이해</li>
+                        <li>- JSX, TSX 사용과 함수형 컴포넌트 작성 가능</li>
+                        <li>- TypeScript를 사용하여 변수 타입 명시 가능</li>
+                        <li>- state, props 개념 및 데이터의 흐름 이해</li>
+                        <li>- Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험</li>
+                        <li>- Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능</li>
+                        <li>- React-router-dom을 사용한 페이지</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>   
-                      
               </div>
-              <div className="skill-row-2">
+              <div className="skill-column-2">
                 <div className={backendTextui ? "content-box backend on" : "content-box backend"} onClick={onClickToggleBackend}>
                   <p className='content-title'>Backend</p>
                   <img src="./img/backend.png" alt="" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>PHP</h2>
                       <div className="detail-box">
-                        <p>
-                        - 웹문서를 모듈화하여 연동 후 활용 가능 <br/>
-                        - RESTFUL API 구현
-                        </p>
+                        <h2>PHP</h2>
+                        <ul>
+                        <li>- 웹문서를 모듈화하여 연동 후 활용 가능</li>
+                        <li>- RESTFUL API 구현</li>
+                        </ul>
                       </div>
+                      <div className="detail-box">
                       <h2>Node.js</h2>
-                        <div className="detail-box">
-                          <p>
-                          - Node.js 기반 서버의 웹페이지 구축 가능 <br/>
-                          </p>
-                        </div>
+                        <ul>
+                        <li>- Node.js 기반 서버의 웹페이지 구축 가능 </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>      
+                </div>   
                 <div className={dbTextui ? "content-box db on" : "content-box db"} onClick={onClickToggleDb}>
                   <p className='content-title'>DataBase</p>
                   <img src="./img/mysql.png" alt="db-skills-img" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>MySQL</h2>
                       <div className="detail-box">
-                        <p>
-                          - MySQL 테이블 생성, 수정, 삭제 가능 <br/>
-                          - 데이터 삽입, 수정, 조회, 삭제 활용 가능
-                        </p>
+                        <h2>MySQL</h2>
+                        <ul>
+                          <li>- MySQL 테이블 생성, 수정, 삭제 가능</li>
+                          <li>- 데이터 삽입, 수정, 조회, 삭제 활용 가능</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                </div>            
+                </div>
                 <div className={collaborationTextui ? "content-box collaboration on" : "content-box collaboration"} onClick={onClickToggleCollaboration}>
                   <p className='content-title'>GitHub, Git</p>
                   <img src="./img/collaboration.png" alt="collaboration-skills-img" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>GitHub, Git</h2>
                       <div className="detail-box">
-                        <p>
-                          - GitHub를 통한 레포지토리 관리 <br/>
-                          - Git bash를 이용하여 홈페이지 배포 가능 <br/>
-                          - Git, Node.js를 통한 빌드 가능
-                        </p>
+                        <h2>GitHub, Git</h2>
+                        <ul>
+                          <li>- GitHub를 통한 레포지토리 관리</li>
+                          <li>- Git bash를 이용하여 홈페이지 배포 가능</li>
+                          <li>- Git, Node.js를 통한 빌드 가능</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="skill-msg">
-              <h2>❗화면을 클릭해 주세요!</h2>
+              <h2>❗스킬 화면을 클릭해 주세요!</h2>
             </div>         
             </div>
             <div className="project-main-title">
@@ -462,7 +466,7 @@ export default function TabletComponent () {
                   </div>
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project01'>
+                  <Link to='/table-project01'>
                     <button >
                     자세히보기
                     </button>
@@ -542,7 +546,7 @@ export default function TabletComponent () {
                   
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project02'>
+                  <Link to='/table-project02'>
                     <button >
                     자세히보기
                     </button>
@@ -556,7 +560,7 @@ export default function TabletComponent () {
                 <div className="project-info-03">
                   <img src="./img/mypage.png" alt="" />
                   <div className="info">
-                    <p>React를 사용한 포트폴리오 홈페이지 입니다. 저에 대한 간단한 설명과 보유스킬 및 지금까지 진행했던 포트폴리오를 소개하는 홈페이지를 반응형으로 제작했습니다.</p>
+                    <p>React를 사용한 포트폴리오 홈페이지 입니다. 저에 대한 간단한 설명과 보유스킬 및 지금까지 진행했던 포트폴리오를 소개하는 홈페이지 입니다.</p>
                     <div className="development-info">
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>개발 기간 :</p>
@@ -587,7 +591,7 @@ export default function TabletComponent () {
                   
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project03'>
+                  <Link to='/table-project03'>
                     <button >
                     자세히보기
                     </button>
@@ -601,6 +605,6 @@ export default function TabletComponent () {
         <div className="footer">
           <h2>Copyright © JungHo Ji. All rights reserved.</h2>
         </div>
-    </main>
+      </main>
   );
 };

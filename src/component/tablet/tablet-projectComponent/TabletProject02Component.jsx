@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import  { useNavigate } from 'react-router-dom';
-import './css/mobile_project01.css';
+import img1 from '../../../img/back_btn.png';
+import './css/tablet_project02.css';
 
-export default function MobileProject02 () {
+export default function TabletProject02Component () {
 
   const [scroll, setScrool] = useState(0);
   const navigate = useNavigate();
@@ -14,34 +15,37 @@ export default function MobileProject02 () {
     navigate(-1);
   };
 
-  const onClickUpBtn=()=> {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-  }
-
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
     window.scrollTo(0, 0);
     window.history.scrollRestoration = 'manual';
+
+    
 }, []);
 
   return (
-    <div id='mobile-project02'>
+    <div id='tablet-project02'>
+      <header id="header" className={scroll >= 99 ? "on" : ""}>
+        <div className="container">
+          <div className="back-btn">
+            <button type='button' className={scroll >= 99 ? "on" : ""} onClick={onClickBackBtn}>
+              <img src={img1} alt=""/>
+            </button>
+          </div>
+        </div>
+      </header>
       <div className="project02-main">
         <div className="container">
           <div className="main-title">
             <img src="./img/kurly_logo.png" alt="" />
-            <h2><strong>마켓컬리</strong> 클론코딩 <span>(개인)</span></h2>
+            <h2><strong>마켓컬리</strong> 클론코딩 (개인)</h2>
           </div>
           <div className="project-content">
             <div className="project-info">
               <h2>❗프로젝트 설명</h2>
               <p className='project-info-main-title'>
                 jQuery를 사용하여 만든 마켓컬리 팀 프로젝트를 React를 사용하여 재구현한 홈페이지 입니다. jQuery에서 사용할 수 있는 부분은 사용하고
-                추가로 구현하지 못했던 부분 등을 스스로 구현했습니다.
+                추가로 구현하지 못했던 부분 등을 스스로 구현한 팀 프로젝트보다 마켓컬리 본 사이트에 가까운 홈페이지 입니다. <br />
               </p>
               <p className='project-info-sub-title'><strong>마켓컬리</strong> 프로젝트에서 구현한 핵심 기능은 <span>3가지</span>입니다.</p>
               <ul>
@@ -84,7 +88,7 @@ export default function MobileProject02 () {
             </div>
             <div className="experience">
               <h2 className='experience-main-title'>❗성장 경험</h2>
-              <h2 className='sub-title'><span>React 대한 이해</span></h2>
+              <h2 className='experience-sub-title'><span>React 대한 이해</span></h2>
               <p>
                 jQuery로 만들었던 프로젝트를 React로 바꾸면서 각 라이브러리의 작동 방식을 알 수 있었습니다.
                 PHP 파일로 다 나눠서 관리했던 jQuery와 달리 React에서는 컴포넌트로 세부적으로 관리할 뿐만 아니라 
@@ -93,16 +97,6 @@ export default function MobileProject02 () {
                 TypeScript를 사용하여 각 변수에 타입을 명시하여 코드의 에러를 사전에 방지할 수 있다는걸 배웠습니다.
               </p>
             </div>
-          </div>
-          <div className="btn-box">
-            <button className='back-btn' onClick={onClickBackBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
-              <h2>뒤로가기</h2>
-            </button>
-            <button className='up-btn' onClick={onClickUpBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
-              <h2>맨위이동</h2>
-            </button>
           </div>
         </div>
       </div>

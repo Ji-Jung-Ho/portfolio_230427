@@ -1,0 +1,155 @@
+#tablet-project03 {
+  width: 100%;
+}
+#tablet-project03 #header {
+  width: 100%;
+  height: 70px;
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+#tablet-project03 #header .container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+}
+#tablet-project03 #header .container .back-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#tablet-project03 #header .container .back-btn button {
+  border: 0;
+  cursor: pointer;
+  background: none;
+}
+#tablet-project03 #header .container .back-btn button img {
+  width: 50px;
+}
+#tablet-project03 #header.on {
+  border: 0;
+}
+#tablet-project03 .project03-main {
+  width: 100%;
+  padding: 70px 0;
+  background: url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#tablet-project03 .project03-main .container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  opacity: 0.9;
+}
+#tablet-project03 .project03-main .container .main-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+  font-family: "Black Han Sans";
+}
+#tablet-project03 .project03-main .container .main-title img {
+  width: 50px;
+  margin-right: 10px;
+}
+#tablet-project03 .project03-main .container .main-title h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+#tablet-project03 .project03-main .container .project-content {
+  width: 100%;
+}
+#tablet-project03 .project03-main .container .project-content .project-info {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+#tablet-project03 .project03-main .container .project-content .project-info h2 {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#tablet-project03 .project03-main .container .project-content .project-info p {
+  line-height: 200%;
+  font-size: 20px;
+  font-weight: 700;
+}
+#tablet-project03 .project03-main .container .project-content .project-info p.project-info-main-title {
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+#tablet-project03 .project03-main .container .project-content .project-info p.project-info-sub-title {
+  padding: 10px 0;
+}
+#tablet-project03 .project03-main .container .project-content .project-info p.project-info-sub-title span {
+  background-color: #8dbdee;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1px;
+}
+#tablet-project03 .project03-main .container .project-content .project-info ul {
+  width: 100%;
+}
+#tablet-project03 .project03-main .container .project-content .project-info ul li {
+  font-size: 19px;
+  margin: 5px 0;
+  line-height: 200%;
+}
+#tablet-project03 .project03-main .container .project-content .development-part {
+  width: 100%;
+  border-bottom: 1px solid #000;
+}
+#tablet-project03 .project03-main .container .project-content .development-part .development-main-title {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#tablet-project03 .project03-main .container .project-content .development-part .development-sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  line-height: 200%;
+}
+#tablet-project03 .project03-main .container .project-content .development-part .development-sub-title span {
+  background-color: #8dbdee;
+  color: #000;
+  border-radius: 3px;
+  padding: 5px;
+}
+#tablet-project03 .project03-main .container .project-content .development-part p {
+  line-height: 200%;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+#tablet-project03 .project03-main .container .project-content .experience {
+  width: 100%;
+}
+#tablet-project03 .project03-main .container .project-content .experience .experience-main-title {
+  font-size: 35px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+#tablet-project03 .project03-main .container .project-content .experience .experience-sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 0;
+  line-height: 200%;
+}
+#tablet-project03 .project03-main .container .project-content .experience .experience-sub-title span {
+  background-color: #8dbdee;
+  color: #000;
+  border-radius: 3px;
+  padding: 5px;
+}
+#tablet-project03 .project03-main .container .project-content .experience p {
+  line-height: 200%;
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}

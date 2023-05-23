@@ -187,7 +187,6 @@ export default function DeskTopComponent () {
               <div className="down-arrow">
                 <img src="./img/56747.png" alt="" />
               </div>
-
             </article>
         </section>
         <section id="section2" className='main-content'>

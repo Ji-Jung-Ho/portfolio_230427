@@ -4,12 +4,15 @@
 #tablet-main #section1 {
   display: flex;
   flex-direction: column;
-  height: 150vh;
+  height: 200vh;
   background-color: #202224;
 }
 #tablet-main #section1 .sec1-aside {
   width: 100vw;
-  height: 50vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
   background-color: #202224;
@@ -85,6 +88,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 100vw;
   height: 100vh;
 }
@@ -93,7 +97,10 @@
   left: 0;
   top: 0;
   width: 100vw;
+  height: 100%;
   opacity: 0.4;
+  background: url(../../../img/jungho_bgimg.jpg) no-repeat 40% 50%;
+  background-size: cover;
 }
 #tablet-main #section1 .sec1-article .img-box img {
   width: 100%;
@@ -105,16 +112,6 @@
   color: #fff;
   position: relative;
   z-index: 2;
-}
-#tablet-main #section1 .sec1-article .main-title .info-subtitle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#tablet-main #section1 .sec1-article .main-title .info-subtitle span {
-  margin: 10px 0;
-  font-size: 20px;
 }
 #tablet-main #section1 .sec1-article .main-title h2 {
   text-align: center;
@@ -131,17 +128,21 @@
   font-size: 70px;
   margin: 40px 0;
 }
-#tablet-main #section1 .sec1-article .main-title h2.info-subtitle {
-  font-size: 20px;
+#tablet-main #section1 .sec1-article .main-title .info-subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#tablet-main #section1 .sec1-article .main-title h2.info-text-motto {
+#tablet-main #section1 .sec1-article .main-title .info-subtitle span {
+  margin: 10px 0;
   font-size: 30px;
 }
 #tablet-main #section1 .sec1-article .down-arrow {
   width: 50px;
   position: absolute;
-  top: 130%;
-  left: 50%;
+  top: 85%;
+  left: 45%;
   animation: bounce 1.5s ease 0s infinite normal none running;
 }
 @keyframes bounce {
@@ -169,12 +170,11 @@
 }
 #tablet-main #section2 .sec2-aside {
   display: flex;
-  width: 20vw;
-  height: 102.2vh;
+  width: 25vw;
+  height: 100vh;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding: 70px 0;
   background-color: #31333B;
   position: sticky;
   top: 0;
@@ -241,12 +241,17 @@
   padding: 40px 40px 0 40px;
   background-color: #FDF8F2;
 }
-#tablet-main #section2 .sec2-article .main-title {
+#tablet-main #section2 .sec2-article .about-me {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #000;
+}
+#tablet-main #section2 .sec2-article .about-me .main-title {
   width: 100%;
   padding-bottom: 40px;
   font-family: "Black Han Sans";
 }
-#tablet-main #section2 .sec2-article .main-title h1 {
+#tablet-main #section2 .sec2-article .about-me .main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
@@ -254,89 +259,89 @@
   font-size: 60px;
   font-weight: 700;
 }
-#tablet-main #section2 .sec2-article .main-title h1 span {
+#tablet-main #section2 .sec2-article .about-me .main-title h1 span {
   border-bottom: 5px solid #000;
 }
-#tablet-main #section2 .sec2-article .about-row-box {
+#tablet-main #section2 .sec2-article .about-me .about-row-box {
   width: 100%;
   display: flex;
   border-radius: 5px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me {
   width: 100%;
   display: flex;
   justify-content: space-around;
   padding: 20px 0;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-left .name {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-left .name {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-left .name img {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-left .name img {
   width: 50px;
   margin-right: 10px;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-left .name h2 {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-left .name h2 {
   font-size: 25px;
   font-weight: 600;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-left .detail {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-left .detail {
   width: 100%;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-left .detail p {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-left .detail p {
   font-size: 20px;
   margin-left: 60px;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-center .birth {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-center .birth {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-center .birth img {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-center .birth img {
   width: 50px;
   margin-right: 10px;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-center .birth h2 {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-center .birth h2 {
   font-size: 25px;
   font-weight: 600;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-center .detail {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-center .detail {
   width: 100%;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-center .detail p {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-center .detail p {
   font-size: 20px;
   margin-left: 60px;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-right .phone-number {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-right .phone-number {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-right .phone-number img {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-right .phone-number img {
   width: 50px;
   margin-right: 10px;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-right .phone-number h2 {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-right .phone-number h2 {
   font-size: 25px;
   font-weight: 600;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-right .detail {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-right .detail {
   width: 100%;
 }
-#tablet-main #section2 .sec2-article .about-row-box .about-me .row1-right .detail p {
+#tablet-main #section2 .sec2-article .about-me .about-row-box .about-me .row1-right .detail p {
   font-size: 20px;
   margin-left: 60px;
 }
 #tablet-main #section2 .sec2-article .education {
   width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #000;
 }
 #tablet-main #section2 .sec2-article .education .edcation-main-title {
-  padding: 70px 0 50px 0;
+  padding: 30px 0;
   font-family: "Black Han Sans";
 }
 #tablet-main #section2 .sec2-article .education .edcation-main-title h2 {
@@ -368,36 +373,39 @@
 }
 #tablet-main #section2 .sec2-article .education .education-content .education-academy {
   width: 100%;
-  padding: 20px 0;
+  padding-top: 20px 0;
 }
 #tablet-main #section2 .sec2-article .education .education-content .education-academy h2 {
   font-size: 25px;
-  padding: 20px 0;
+  padding-bottom: 20px;
   font-weight: 600;
 }
 #tablet-main #section2 .sec2-article .education .education-content .education-academy ul li {
   font-size: 20px;
   padding: 10px 0;
+  line-height: 150%;
+  text-indent: -12px;
+  padding-left: 12px;
 }
 #tablet-main #section2 .sec2-article .education .education-content .education-academy ul li span {
   font-size: 20px;
   background-color: #8dbdee;
   color: #000;
-  padding: 4px;
-  border-radius: 5px;
+  padding: 1px;
+  border-radius: 3px;
 }
 #tablet-main #section2 .sec2-article .work-experience {
   width: 100%;
   border-bottom: 1px solid #000;
-  padding-bottom: 70px;
+  padding-bottom: 30px;
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-main-title {
-  padding: 50px 0;
+  padding: 30px 0;
   font-family: "Black Han Sans";
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-main-title h2 {
   font-size: 50px;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 14px;
   text-align: center;
@@ -410,37 +418,35 @@
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-content h1 {
   font-size: 30px;
-  padding: 20px 0 0 0;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 150%;
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-content h2 {
   font-size: 25px;
   padding: 30px 0;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 150%;
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-content ul {
-  padding-left: 30px;
+  line-height: 150%;
+  font-size: 20px;
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-content ul li {
-  padding: 10px 0;
-  font-size: 20px;
-  list-style: disc;
+  margin: 10px 0;
 }
 #tablet-main #section2 .sec2-article .work-experience .work-experience-content ul li > h2 {
   font-size: 50px;
 }
 #tablet-main #section2 .sec2-article .skill-main-title {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
   font-family: "Black Han Sans";
 }
 #tablet-main #section2 .sec2-article .skill-main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  padding: 10px;
+  padding: 20px 0 40px 0;
   font-size: 60px;
   font-weight: 700;
 }
@@ -450,42 +456,50 @@
 #tablet-main #section2 .sec2-article .skill-content {
   width: 100%;
   position: relative;
-  padding: 70px 0;
+  padding-top: 40px;
   border-bottom: 1px solid #000;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 {
-  display: flex;
-  padding-bottom: 50px;
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 {
+  padding-bottom: 10px;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box {
-  width: 100%;
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box {
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   position: relative;
   transition: all 0.2s;
   background-color: #fff;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box.on > .click-ui-container {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box.on > .click-ui-container {
   opacity: 1;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .content-title {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box.frontend {
+  height: 70vh;
+}
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box .content-title {
   color: #ec530c;
   font-size: 30px;
   font-weight: 700;
-  padding: 10px 0 5px 20px;
+  padding: 10px;
+  text-align: center;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box img {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box img {
   width: 100%;
-  height: 450px;
+  height: 200px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .click-ui-container {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box img.frontend-img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box .click-ui-container {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.92);
   border-radius: 20px;
@@ -497,54 +511,57 @@
   transition: all 0.5s;
   color: #fff;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .click-ui-container .click-ui-content {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box .click-ui-container .click-ui-content {
   width: 100%;
+  height: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .click-ui-container .click-ui-content h2 {
-  font-size: 20px;
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box .click-ui-container .click-ui-content .detail-box h2 {
+  font-size: 25px;
   margin: 10px 0;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .click-ui-container .click-ui-content .detail-box {
-  padding: 0 10px;
-  line-height: 200%;
-}
-#tablet-main #section2 .sec2-article .skill-content .skill-row-1 .content-box .click-ui-container .click-ui-content .detail-box p {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-1 .content-box .click-ui-container .click-ui-content .detail-box ul {
   color: #ccc;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 130%;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 {
   display: flex;
+  padding-bottom: 20px;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box {
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   display: flex;
   flex-direction: column;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   position: relative;
   transition: all 0.2s;
   background-color: #fff;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box.on > .click-ui-container {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box.on > .click-ui-container {
   opacity: 1;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .content-title {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .content-title {
   color: #ec530c;
   font-size: 30px;
   font-weight: 700;
-  padding: 10px 0 5px 20px;
+  padding: 10px;
+  text-align: center;
   text-decoration: underline;
   text-underline-offset: 6px;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box img {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box img {
   width: 100%;
-  height: 300px;
+  height: 80%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .click-ui-container {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .click-ui-container {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.92);
   border-radius: 20px;
@@ -556,29 +573,34 @@
   transition: all 0.5s;
   color: #fff;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .click-ui-container .click-ui-content {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .click-ui-container .click-ui-content {
   width: 100%;
+  height: 100%;
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .click-ui-container .click-ui-content h2 {
-  font-size: 20px;
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .click-ui-container .click-ui-content .detail-box h2 {
+  font-size: 25px;
   margin: 10px 0;
 }
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .click-ui-container .click-ui-content .detail-box {
-  padding: 0 10px;
-  line-height: 200%;
-}
-#tablet-main #section2 .sec2-article .skill-content .skill-row-2 .content-box .click-ui-container .click-ui-content .detail-box p {
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .click-ui-container .click-ui-content .detail-box ul {
   color: #ccc;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 130%;
+  padding: 5px;
+}
+#tablet-main #section2 .sec2-article .skill-content .skill-column-2 .content-box .click-ui-container .click-ui-content .detail-box ul li {
+  text-indent: -13px;
 }
 #tablet-main #section2 .sec2-article .skill-content .skill-msg {
   position: absolute;
-  top: 30px;
-  left: 25px;
+  top: -10px;
+  left: 10px;
 }
 #tablet-main #section2 .sec2-article .skill-content .skill-msg h2 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   padding: 5px;
   border-radius: 15px;
@@ -592,7 +614,7 @@
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  padding: 10px;
+  padding: 10px 0;
   font-size: 60px;
   font-weight: 700;
 }
@@ -624,7 +646,7 @@
 }
 #tablet-main #section2 .sec2-article .project-content .content-01 .project-info-01 {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-01 .project-info-01 .swiper-container {
   width: 100%;
@@ -704,7 +726,7 @@
   padding-top: 115px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info > p {
-  font-size: 18px;
+  font-size: 25px;
   padding-bottom: 20px;
   line-height: 150%;
   border-bottom: 2px solid #000;
@@ -722,7 +744,7 @@
   display: flex;
   width: 100%;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info .development-info .detail .left-p {
   width: 30%;
@@ -779,7 +801,7 @@
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 {
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 .swiper-container {
   width: 100%;
@@ -859,7 +881,7 @@
   padding-top: 115px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p {
-  font-size: 18px;
+  font-size: 25px;
   padding-bottom: 20px;
   line-height: 150%;
   border-bottom: 2px solid #000;
@@ -870,14 +892,14 @@
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info {
   width: 100%;
-  padding: 25px 0 25px 0;
+  padding: 25px 0;
   border-bottom: 2px solid #000;
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info .detail {
   display: flex;
   width: 100%;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info .detail .left-p {
   width: 30%;
@@ -946,8 +968,8 @@
   width: 100%;
 }
 #tablet-main #section2 .sec2-article .project-content .content-03 .project-info-03 .info > p {
-  font-size: 18px;
-  padding: 20px 0 10px 0;
+  font-size: 25px;
+  padding: 20px 0;
   line-height: 150%;
   border-bottom: 2px solid #000;
 }
@@ -960,7 +982,7 @@
   display: flex;
   width: 100%;
   padding: 10px 0;
-  font-size: 15px;
+  font-size: 20px;
 }
 #tablet-main #section2 .sec2-article .project-content .content-03 .project-info-03 .info .development-info .detail .left-p {
   width: 30%;

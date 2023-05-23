@@ -3,7 +3,7 @@ import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import 'swiper/swiper-bundle.css';
-import './css/mobilemain.css'
+import './css/mobile_main.css'
 
 SwiperCore.use([Navigation, Pagination])
 
@@ -23,7 +23,15 @@ export default function MobileComponent () {
     window.scrollTo({top: top, behavior: 'smooth'});
   }
 
-  // section1,2 aside menu 클릭 시 해당 탑 값으로 스크롤 이동
+  const onClickUpBtn=()=> {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  // section1 nav menu 클릭 시 해당 탑 값으로 스크롤 이동
   const onClickmenu = (e, top) => {
     e.preventDefault();
     scrollToContent(top);
@@ -48,7 +56,7 @@ export default function MobileComponent () {
   const onClickToggleCollaboration=()=>{
     setCollaborationTextUi (collaborationTextui => !collaborationTextui);
   }
- 
+
   return (
     <main id='mobile-main'>
         <section id='section1' className='intro'>
@@ -56,9 +64,9 @@ export default function MobileComponent () {
               <nav className='menu-bar'>
                 <ul className="main-title">
                   <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 727)}>ABOUT ME</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 2546)}>SKILLS</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 3333)}>PROJECT</a></li>
+                  <li><a href='#!' onClick={(e) => onClickmenu(e, 1619)}>ABOUT ME</a></li>
+                  <li><a href='#!' onClick={(e) => onClickmenu(e, 3247)}>SKILLS</a></li>
+                  <li><a href='#!' onClick={(e) => onClickmenu(e, 4796)}>PROJECT</a></li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -190,18 +198,18 @@ export default function MobileComponent () {
                         - Ajax를 이용하여 비동기 방식으로 웹 페이지 구축 가능 <br/>
                         </p>
                       </div>
-                        <div className="detail-box">
-                          <h2>React</h2>
-                          <p>
-                          - 리액트 개발환경 설정과 Virtual DOM 개념 이해 <br/>
-                          - JSX, TSX 사용과 함수형 컴포넌트 작성 가능 <br/>
-                          - TypeScript를 사용하여 변수 타입 명시 가능 <br/>
-                          - state, props 개념 및 데이터의 흐름 이해 <br/>
-                          - Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험 <br/>
-                          - Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능 <br/>
-                          - React-router-dom을 사용한 페이지 이동 구현
-                          </p>
-                        </div>
+                      <div className="detail-box">
+                        <h2>React</h2>
+                        <p>
+                        - 리액트 개발환경 설정과 Virtual DOM 개념 이해 <br/>
+                        - JSX, TSX 사용과 함수형 컴포넌트 작성 가능 <br/>
+                        - TypeScript를 사용하여 변수 타입 명시 가능 <br/>
+                        - state, props 개념 및 데이터의 흐름 이해 <br/>
+                        - Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험 <br/>
+                        - Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능 <br/>
+                        - React-router-dom을 사용한 페이지 이동 구현
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>   
@@ -210,19 +218,19 @@ export default function MobileComponent () {
                   <img src="./img/backend.png" alt="" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>PHP</h2>
                       <div className="detail-box">
+                        <h2>PHP</h2>
                         <p>
                         - 웹문서를 모듈화하여 연동 후 활용 가능 <br/>
                         - RESTFUL API 구현
                         </p>
                       </div>
+                      <div className="detail-box">
                       <h2>Node.js</h2>
-                        <div className="detail-box">
-                          <p>
-                          - Node.js 기반 서버의 웹페이지 구축 가능 <br/>
-                          </p>
-                        </div>
+                        <p>
+                        - Node.js 기반 서버의 웹페이지 구축 가능 <br/>
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>      
@@ -231,8 +239,8 @@ export default function MobileComponent () {
                   <img src="./img/mysql.png" alt="db-skills-img" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>MySQL</h2>
                       <div className="detail-box">
+                        <h2>MySQL</h2>
                         <p>
                           - MySQL 테이블 생성, 수정, 삭제 가능 <br/>
                           - 데이터 삽입, 수정, 조회, 삭제 활용 가능
@@ -246,8 +254,8 @@ export default function MobileComponent () {
                   <img src="./img/collaboration.png" alt="collaboration-skills-img" />
                   <div className="click-ui-container">
                     <div className="click-ui-content">
-                      <h2>GitHub, Git</h2>
                       <div className="detail-box">
+                        <h2>GitHub, Git</h2>
                         <p>
                           - GitHub를 통한 레포지토리 관리 <br/>
                           - Git bash를 이용하여 홈페이지 배포 가능 <br/>
@@ -471,11 +479,13 @@ export default function MobileComponent () {
                 </div>
               </div>
             </div>
-            
           </article>
         </section>
         <div className="footer">
           <h2>Copyright © JungHo Ji. All rights reserved.</h2>
+          <button className='up-btn' onClick={onClickUpBtn}>
+            <img src="./img/back_btn_on.png" alt="" />
+          </button>
         </div>
     </main>
   );
