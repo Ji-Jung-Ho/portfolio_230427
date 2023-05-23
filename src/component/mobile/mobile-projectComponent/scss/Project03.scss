@@ -1,0 +1,155 @@
+#mobile-project03 {
+  width: 100%;
+  .project03-main {
+    width: 100%;
+    background:url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
+    background-size: cover;
+    .container {
+      width: 100%;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+      opacity: 0.9;
+      .main-title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #000;
+        font-family: 'Black Han Sans';
+        img {
+          width: 40px;
+          margin-right: 10px;
+        }
+        h2 {
+          font-size: 26px;
+          font-weight: 700;
+        }
+      }
+      .project-content {
+        width: 100%;
+        padding-bottom: 10px;
+        .project-info {
+          width: 100%;
+          border-bottom: 1px solid #000;
+          h2 {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px 0;
+          }
+          p {
+            line-height: 180%;
+            font-size: 15px;
+            font-weight: 700;
+            strong {
+              color: #5f0080;
+              font-size: 15px;
+              font-weight: 700;
+              text-decoration: underline;
+              text-underline-position: under;
+            }
+            &.project-info-main-title {
+              border-bottom: 1px solid #000;
+              padding-bottom: 10px;
+            }
+            &.project-info-sub-title {
+              padding: 10px 0;
+              span {
+                background-color: #8dbdee;
+                color: #fff;
+                border-radius: 3px;
+                padding: 1px;
+              }
+            }
+          }
+          ul {
+            width: 100%;
+            line-height: 180%;
+            text-indent: -17px;
+            padding-left: 15px;
+            li {
+              font-size: 15px;
+              margin: 5px 0;
+            }
+          }
+        }
+        .development-part {
+          width: 100%;
+          border-bottom: 1px solid #000;
+          .development-main-title {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px 0;
+          }
+          .development-sub-title {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 0;
+            line-height: 180%;
+            span {
+              background-color: #8dbdee;
+              color: #000;
+              border-radius: 3px;
+              padding: 1px;
+            }
+          }
+          p {
+            line-height: 180%;
+            font-size: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+          }
+        }
+        .experience {
+          width: 100%;
+          .experience-main-title {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 10px 0;
+          }
+          .experience-sub-title {
+            font-size: 15px;
+            font-weight: 700;
+            padding: 10px 0;
+            line-height: 180%;
+            span {
+              background-color: #8dbdee;
+              color: #000;
+              border-radius: 3px;
+              padding: 1px;
+            }
+          }
+          p {
+            line-height: 180%;
+            font-size: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #000;
+          }
+        }
+      }
+      .btn-box {
+        width: 100%;
+        display: flex;
+        button {
+          width: 100%;
+          border: 0;
+          background: none;
+          &.back-btn {
+            img {
+              width: 30px;
+            }
+          }
+          &.up-btn {
+            img {
+              width: 30px;
+              transform: rotate(90deg);
+            }
+            h2 {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

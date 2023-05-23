@@ -192,6 +192,7 @@
 }
 #main #section2 .sec2-aside .menu-bar {
   display: flex;
+  height: 100%;
 }
 #main #section2 .sec2-aside .menu-bar .nav-main-title {
   width: 100%;
@@ -252,21 +253,20 @@
   background-color: #FDF8F2;
 }
 #main #section2 .sec2-article .main-title {
-  width: 180px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: -24px;
-  left: 53%;
-  background-color: #8dbdee;
-  border-radius: 20px;
+  width: 100%;
+  padding-bottom: 40px;
   font-family: "Black Han Sans";
 }
-#main #section2 .sec2-article .main-title h2 {
-  font-size: 30px;
+#main #section2 .sec2-article .main-title h1 {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 60px;
   font-weight: 700;
+}
+#main #section2 .sec2-article .main-title h1 span {
+  border-bottom: 5px solid #000;
 }
 #main #section2 .sec2-article .about-row-box {
   width: 100%;
@@ -278,12 +278,8 @@
 #main #section2 .sec2-article .about-row-box .about-me {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 20px 0;
-  margin-left: 120px;
-}
-#main #section2 .sec2-article .about-row-box .about-me .row1-left {
-  width: 350px;
 }
 #main #section2 .sec2-article .about-row-box .about-me .row1-left .name {
   display: flex;
@@ -305,9 +301,6 @@
   font-size: 20px;
   margin-left: 60px;
 }
-#main #section2 .sec2-article .about-row-box .about-me .row1-center {
-  width: 350px;
-}
 #main #section2 .sec2-article .about-row-box .about-me .row1-center .birth {
   display: flex;
   align-items: center;
@@ -327,9 +320,6 @@
 #main #section2 .sec2-article .about-row-box .about-me .row1-center .detail p {
   font-size: 20px;
   margin-left: 60px;
-}
-#main #section2 .sec2-article .about-row-box .about-me .row1-right {
-  width: 350px;
 }
 #main #section2 .sec2-article .about-row-box .about-me .row1-right .phone-number {
   display: flex;
@@ -357,7 +347,7 @@
   border-bottom: 1px solid #000;
 }
 #main #section2 .sec2-article .education .edcation-main-title {
-  padding: 50px 0;
+  padding: 70px 0 50px 0;
   font-family: "Black Han Sans";
 }
 #main #section2 .sec2-article .education .edcation-main-title h2 {
@@ -451,21 +441,20 @@
   font-size: 50px;
 }
 #main #section2 .sec2-article .skill-main-title {
-  width: 180px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 37.3%;
-  left: 53%;
-  background-color: #8dbdee;
-  border-radius: 20px;
+  width: 100%;
+  padding-top: 40px;
   font-family: "Black Han Sans";
 }
-#main #section2 .sec2-article .skill-main-title h2 {
-  font-size: 30px;
+#main #section2 .sec2-article .skill-main-title h1 {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 60px;
   font-weight: 700;
+}
+#main #section2 .sec2-article .skill-main-title h1 span {
+  border-bottom: 5px solid #000;
 }
 #main #section2 .sec2-article .skill-content {
   width: 100%;
@@ -506,7 +495,7 @@
 #main #section2 .sec2-article .skill-content .content-box img {
   margin: 20px 0 0 0;
   width: 100%;
-  height: 100%;
+  height: 500px;
 }
 #main #section2 .sec2-article .skill-content .content-box .click-ui-container {
   opacity: 0;
@@ -548,21 +537,20 @@
   border-radius: 15px;
 }
 #main #section2 .sec2-article .project-main-title {
-  width: 180px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 52.9%;
-  left: 53%;
-  background-color: #8dbdee;
-  border-radius: 20px;
+  width: 100%;
+  padding-top: 40px;
   font-family: "Black Han Sans";
 }
-#main #section2 .sec2-article .project-main-title h2 {
-  font-size: 30px;
+#main #section2 .sec2-article .project-main-title h1 {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 60px;
   font-weight: 700;
+}
+#main #section2 .sec2-article .project-main-title h1 span {
+  border-bottom: 5px solid #000;
 }
 #main #section2 .sec2-article .project-content {
   display: flex;
@@ -579,7 +567,7 @@
 }
 #main #section2 .sec2-article .project-content .content-01 .content-title {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   font-family: "Black Han Sans";
 }
 #main #section2 .sec2-article .project-content .content-01 .content-title h2 {
@@ -603,7 +591,7 @@
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .swiper-container > img {
   width: 100%;
-  height: 400px;
+  height: 100%;
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .swiper-container > button {
   border: 0;
@@ -675,9 +663,9 @@
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .info > p {
   font-size: 18px;
-  padding: 20px 0 10px 0;
+  padding-bottom: 20px;
   line-height: 150%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .info > p span {
   background-color: #8dbdee;
@@ -685,8 +673,8 @@
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .info .development-info {
   width: 100%;
-  padding: 20px 0 10px 0;
-  border-bottom: 1px solid #fff;
+  padding: 25px 0 25px 0;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-01 .project-info-01 .info .development-info .detail {
   display: flex;
@@ -739,7 +727,7 @@
 }
 #main #section2 .sec2-article .project-content .content-02 .content-title {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   font-family: "Black Han Sans";
 }
 #main #section2 .sec2-article .project-content .content-02 .content-title h2 {
@@ -764,7 +752,7 @@
 }
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .swiper-container > img {
   width: 100%;
-  height: 400px;
+  height: 100%;
 }
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .swiper-container > button {
   border: 0;
@@ -836,22 +824,18 @@
 }
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p {
   font-size: 18px;
-  padding: 20px 0 10px 0;
+  padding-bottom: 20px;
   line-height: 150%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p .color {
   background-color: #8dbdee;
   color: #000;
 }
-#main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p .underscore {
-  text-decoration: underline;
-  text-underline-position: from-font;
-}
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info {
   width: 100%;
-  padding: 20px 0 10px 0;
-  border-bottom: 1px solid #fff;
+  padding: 25px 0 25px 0;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info .detail {
   display: flex;
@@ -905,7 +889,7 @@
 }
 #main #section2 .sec2-article .project-content .content-03 .content-title {
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   font-family: "Black Han Sans";
 }
 #main #section2 .sec2-article .project-content .content-03 .content-title h2 {
@@ -933,12 +917,12 @@
   font-size: 18px;
   padding: 20px 0 10px 0;
   line-height: 150%;
-  border-bottom: 1px solid #fff;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-03 .project-info-03 .info .development-info {
   width: 100%;
-  padding: 20px 0 10px 0;
-  border-bottom: 1px solid #fff;
+  padding: 20px 0 23px 0;
+  border-bottom: 2px solid #000;
 }
 #main #section2 .sec2-article .project-content .content-03 .project-info-03 .info .development-info .detail {
   display: flex;

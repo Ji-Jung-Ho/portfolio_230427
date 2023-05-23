@@ -2,7 +2,7 @@
   width: 100%;
 }
 #project01 #header {
-  width: 100%;
+  width: 90%;
   height: 70px;
   transition: all 0.3s;
   position: fixed;
@@ -10,12 +10,10 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 #project01 #header .container {
-  width: 100%;
-  max-width: 1400px;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
   display: flex;
-  width: 100%;
   position: relative;
 }
 #project01 #header .container .back-btn {
@@ -41,7 +39,7 @@
   background-size: cover;
 }
 #project01 .project01-main .container {
-  width: 1200px;
+  width: 80%;
   margin: 0 auto;
   padding: 0 20px;
   border-radius: 5px;
