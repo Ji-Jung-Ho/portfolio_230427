@@ -40,7 +40,7 @@
       width: 80vw;
       margin: 0 auto;
       padding: 20px;
-      border-radius: 20px;
+      border-radius: 5px;
       background-color: #fff;
       opacity: 0.9;
       .main-title {
@@ -124,7 +124,7 @@
             font-family: 'Black Han Sans';
           }
           .development-sub-title {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 700;
             padding: 10px 0;
             line-height: 180%;
@@ -136,31 +136,10 @@
               padding: 5px;
             }
           }
-          ul {
-            width: 100%;
-            text-indent: -16px;
-            padding-left: 16px;
-            li {
-              font-size: 20px;
-              margin: 20px 0;
-              line-height: 180%;
-              img {
-                width: 7px;
-                margin-right: 10px;
-              }
-              span {
-                background-color: #5f0080;
-                color: #fff;
-                font-weight: 700;
-                border-radius: 3px;
-                padding: 1px;
-              }
-            }
-          }
           p {
             line-height: 180%;
             font-size: 20px;
-            padding-bottom: 5px;
+            padding-bottom: 10px;
             border-bottom: 1px solid #000;
           }
         }
@@ -173,7 +152,7 @@
             font-family: 'Black Han Sans';
           }
           .experience-sub-title {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 700;
             padding: 10px 0;
             line-height: 180%;

@@ -1,4 +1,4 @@
-#project02 {
+#desktop-project01 {
   width: 100%;
   #header {
     width: 100%;
@@ -8,12 +8,10 @@
     z-index: 3;
     border-bottom: 1px solid rgba(255,255,255,0.5);
     .container {
-      width: 100%;
-      max-width: 1350px;
+      width: 93%;
       height: 100%;
       margin: 0 auto;
       display: flex;
-      width: 100%;
       position: relative;
       .back-btn {
         width: 100%;
@@ -33,15 +31,15 @@
       border: 0;
     }
   }
-  .project02-main {
+  .project01-main {
     width: 100%;
     padding-top: 70px;
-    background:url(../../../img/kurly_banner.jpg) no-repeat 50% 50%;
+    background:url(../../../../img/kurly_banner.jpg) no-repeat 50% 50%;
     background-size: cover;
     .container {
-      width: 1200px;
+      width: 80vw;
       margin: 0 auto;
-      padding: 0 20px;
+      padding: 20px;
       border-radius: 5px;
       background-color: #fff;
       opacity: 0.9;
@@ -50,43 +48,37 @@
         display: flex;
         align-items: center;
         padding: 20px 0;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #000;
         font-family: 'Black Han Sans';
         img {
-          width: 50px;
+          width: 60px;
           margin-right: 10px;
         }
         h2 {
-          font-size: 32px;
+          font-size: 60px;
           strong {
             color: #5f0080;
-            font-size: 32px;
+            font-size: 60px;
             font-weight: 700;
           }
         }
       }
       .project-content {
         width: 100%;
-        margin: 0 0 30px 0;
         .project-info {
           width: 100%;
-          padding: 10px 0;
-          border-bottom: 1px solid #fff;
+          border-bottom: 1px solid #000;
           h2 {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: 700;
-            padding: 10px 0;
-          }
-          .explanation {
-            line-height: 200%;
-            font-size: 20px;
-            padding: 20px 0 20px 20px;
+            padding: 20px 0;
+            font-family: 'Black Han Sans';
           }
           p {
-            line-height: 200%;
+            line-height: 180%;
             font-size: 20px;
-            padding-left: 20px;
             font-weight: 700;
+            padding-left: 20px;
             strong {
               color: #5f0080;
               font-size: 20px;
@@ -94,22 +86,25 @@
               text-decoration: underline;
               text-underline-position: under;
             }
-            span {
-              background-color: #5f0080;
-              color: #fff;
-              border-radius: 3px;
-              padding: 5px;
+            &.project-info-main-title {
+              padding-bottom: 10px;
+            }
+            &.project-info-sub-title {
+              span {
+                background-color: #5f0080;
+                color: #fff;
+                border-radius: 3px;
+                padding: 3px;
+              }
             }
           }
           ul {
             width: 100%;
-            margin: 10px 0 10px 20px;
-            padding: 0 0 0 20px;
-            line-height: 200%;
+            padding: 20px;
             li {
-              list-style: auto;
               font-size: 20px;
-              margin: 10px 0;
+              margin: 5px 0;
+              line-height: 200%;
               span {
                 text-decoration: underline;
                 text-underline-offset: 5px;
@@ -119,83 +114,61 @@
         }
         .development-part {
           width: 100%;
-          padding: 10px 0 20px 0;
-          border-bottom: 1px solid #fff;
-          h2.main-title {
-            font-size: 30px;
+          border-bottom: 1px solid #000;
+          .development-part-main-title {
+            font-size: 40px;
             font-weight: 700;
-            padding: 10px 0 20px 0;
-          }
-          .sub-title {
-            font-size: 20px;
-            font-weight: 700;
-            margin: 20px 0;
-            padding-left: 20px;
-            span {
-              background-color: #600080;
-              color: #fff;
-              border-radius: 3px;
-              padding: 5px;
-            }
+            padding: 20px 0;
+            font-family: 'Black Han Sans';
           }
           ul {
             width: 100%;
             margin: 10px 0 10px 20px;
-            line-height: 200%;
             li {
-              font-size: 20px;
-              margin: 20px 0;
+              font-size: 25px;
+              margin: 10px 0;
+              line-height: 200%;
               img {
                 width: 10px;
                 margin-right: 20px;
               }
               span {
-                background-color: #631a7b;
+                background-color: #5f0080;
                 color: #fff;
                 font-weight: 700;
                 border-radius: 3px;
-                padding: 5px;
+                padding: 3px;
+                font-family: 'Black Han Sans';
               }
             }
-          }
-          p {
-            line-height: 200%;
-            font-size: 18px;
-            padding-left: 20px;
           }
         }
         .experience {
           width: 100%;
-          padding: 10px 0 30px 0;
-          border-bottom: 1px solid #fff;
           .experience-main-title {
-            font-size: 30px;
+            font-size: 40px;
             font-weight: 700;
-            padding: 10px 0 20px 0;
+            padding: 20px 0;
+            font-family: 'Black Han Sans';
           }
-          .sub-title {
-            font-size: 20px;
+          .experience-sub-title {
+            font-size: 25px;
             font-weight: 700;
-            margin: 20px 0;
-            padding-left: 20px;
+            padding: 10px 0;
+            line-height: 200%;
+            font-family: 'Black Han Sans';
             span {
-              background-color: #600080;
+              background-color: #5f0080;
               color: #fff;
               border-radius: 3px;
-              padding: 5px;
+              padding: 3px;
             }
           }
           p {
             line-height: 200%;
-            font-size: 18px;
-            padding-left: 20px;
-            strong {
-              color: #5f0080;
-              font-size: 18px;
-              font-weight: 700;
-              text-decoration: underline;
-              text-underline-position: under;
-            }
+            font-size: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #000;
           }
         }
       }

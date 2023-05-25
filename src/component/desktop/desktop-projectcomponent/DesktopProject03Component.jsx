@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import  { useNavigate } from 'react-router-dom';
+import img1 from '../../../img/back_btn.png';
 import img2 from '../../../img/back_btn_on.png';
-import './css/tablet_project03.css';
+import './css/desktop_project03.css';
 
-export default function TabletProject03Component () {
+export default function DesktopProject03Component () {
 
   const [scroll, setScrool] = useState(0);
   const navigate = useNavigate();
@@ -21,22 +22,23 @@ export default function TabletProject03Component () {
 }, []);
 
   return (
-    <div id='tablet-project03'>
+    <div id='desktop-project03'>
       <header id="header" className={scroll >= 99 ? "on" : ""}>
         <div className="container">
           <div className="back-btn">
             <button type='button' className={scroll >= 99 ? "on" : ""} onClick={onClickBtn}>
-              <img src={img2} alt=""/>
+              <img src={scroll <= 99 ? img1 : img2} alt=""/>
             </button>
           </div>
           <div className="banner-img-box"></div>
         </div>
       </header>
+      
       <div className="project03-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
-            <h2>나의 포트폴리오</h2>
+            <img src="./img/sun.png" alt="" />
+            <h2>나만의 포트폴리오</h2>
           </div>
           <div className="project-content">
             <div className="project-info">
@@ -80,7 +82,7 @@ export default function TabletProject03Component () {
               <h2 className='experience-sub-title'><span>다양한 JavaScript 라이브러리의 사용</span></h2>
               <p>
                 이 웹페이지를 제작하면서 많은 라이브러리의 사용방법을 배웠습니다. 간단하게 슬라이드를 구현할 수 있는 Swiper, 효과적인 애니메이션을 손쉽게 구현할 수 있는 React-reveal
-                , SPA에서 페이지 전환을 구현하기 위한 React-Router, 다양한 디바이스 환경에서 웹페이지를 볼 수 있도록 React-responsive를 사용하여 반응형 웹페이지를 제작했습니다. 
+                , SPA에서 페이지 전환을 구현하기 위한 React-Router, 다양한 디바이스 환경에서 웹페이지를 볼 수 있도록 React-responsive를 사용하여 반응형 웹페이지를 제작했습니다
                 다양한 라이브러리를 통해서 이미지 슬라이드, 애니메이션 효과, 페이지 전환, 반응형 웹페이지 제작을 하는 방법에 익숙해졌습니다.
               </p>
             </div>

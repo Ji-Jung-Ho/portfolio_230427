@@ -177,17 +177,17 @@
   padding: 40px 40px 0 40px;
   background-color: #FDF8F2;
 }
-#mobile-main #section2 .sec2-article .about-me {
+#mobile-main #section2 .sec2-article #about-me {
   width: 100%;
   padding-bottom: 40px;
   border-bottom: 1px solid #000;
 }
-#mobile-main #section2 .sec2-article .about-me .main-title {
+#mobile-main #section2 .sec2-article #about-me .main-title {
   width: 100%;
   padding-bottom: 20px;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article .about-me .main-title h1 {
+#mobile-main #section2 .sec2-article #about-me .main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
@@ -195,32 +195,32 @@
   font-size: 26px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article .about-me .main-title h1 span {
+#mobile-main #section2 .sec2-article #about-me .main-title h1 span {
   border-bottom: 5px solid #000;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box {
+#mobile-main #section2 .sec2-article #about-me .about-row-box {
   width: 100%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box .row1 .my-info {
+#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box .row1 .my-info img {
+#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info img {
   width: 25px;
   margin-right: 10px;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box .row1 .my-info h2 {
+#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info h2 {
   font-weight: 600;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box .row1 .detail {
+#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .detail {
   width: 100%;
 }
-#mobile-main #section2 .sec2-article .about-me .about-row-box .row1 .detail p {
+#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .detail p {
   margin-left: 35px;
 }
 #mobile-main #section2 .sec2-article .education {
@@ -322,12 +322,12 @@
 #mobile-main #section2 .sec2-article .work-experience .work-experience-content ul li > h2 {
   font-size: 50px;
 }
-#mobile-main #section2 .sec2-article .skill-main-title {
+#mobile-main #section2 .sec2-article #skill-main-title {
   width: 100%;
   padding-top: 20px;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article .skill-main-title h1 {
+#mobile-main #section2 .sec2-article #skill-main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
@@ -335,7 +335,7 @@
   font-size: 26px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article .skill-main-title h1 span {
+#mobile-main #section2 .sec2-article #skill-main-title h1 span {
   border-bottom: 5px solid #000;
 }
 #mobile-main #section2 .sec2-article .skill-content {
@@ -360,9 +360,6 @@
 #mobile-main #section2 .sec2-article .skill-content .skill-column .content-box.on > .click-ui-container {
   opacity: 1;
 }
-#mobile-main #section2 .sec2-article .skill-content .skill-column .content-box.frontend {
-  height: 70vh;
-}
 #mobile-main #section2 .sec2-article .skill-content .skill-column .content-box .content-title {
   color: #ec530c;
   font-size: 30px;
@@ -380,7 +377,7 @@
 }
 #mobile-main #section2 .sec2-article .skill-content .skill-column .content-box img.frontend-img {
   width: 100%;
-  height: 500px;
+  height: 550px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -426,12 +423,12 @@
   padding: 5px;
   border-radius: 15px;
 }
-#mobile-main #section2 .sec2-article .project-main-title {
+#mobile-main #section2 .sec2-article #project-main-title {
   width: 100%;
   padding: 20px 0;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article .project-main-title h1 {
+#mobile-main #section2 .sec2-article #project-main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
@@ -439,7 +436,7 @@
   font-size: 26px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article .project-main-title h1 span {
+#mobile-main #section2 .sec2-article #project-main-title h1 span {
   border-bottom: 5px solid #000;
 }
 #mobile-main #section2 .sec2-article .project-content {
@@ -554,6 +551,8 @@
 #mobile-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info > p span {
   background-color: #8dbdee;
   color: #000;
+  padding: 1px;
+  border-radius: 5px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info .development-info {
   width: 100%;
@@ -713,6 +712,8 @@
 #mobile-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p span {
   background-color: #8dbdee;
   color: #000;
+  padding: 1px;
+  border-radius: 5px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info {
   width: 100%;

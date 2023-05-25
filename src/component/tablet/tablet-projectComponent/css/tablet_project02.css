@@ -42,7 +42,7 @@
   width: 80vw;
   margin: 0 auto;
   padding: 20px;
-  border-radius: 20px;
+  border-radius: 5px;
   background-color: #fff;
   opacity: 0.9;
 }
@@ -129,7 +129,7 @@
   font-family: "Black Han Sans";
 }
 #tablet-project02 .project02-main .container .project-content .development-part .development-sub-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
   line-height: 180%;
@@ -141,31 +141,10 @@
   border-radius: 3px;
   padding: 5px;
 }
-#tablet-project02 .project02-main .container .project-content .development-part ul {
-  width: 100%;
-  text-indent: -16px;
-  padding-left: 16px;
-}
-#tablet-project02 .project02-main .container .project-content .development-part ul li {
-  font-size: 20px;
-  margin: 20px 0;
-  line-height: 180%;
-}
-#tablet-project02 .project02-main .container .project-content .development-part ul li img {
-  width: 7px;
-  margin-right: 10px;
-}
-#tablet-project02 .project02-main .container .project-content .development-part ul li span {
-  background-color: #5f0080;
-  color: #fff;
-  font-weight: 700;
-  border-radius: 3px;
-  padding: 1px;
-}
 #tablet-project02 .project02-main .container .project-content .development-part p {
   line-height: 180%;
   font-size: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #000;
 }
 #tablet-project02 .project02-main .container .project-content .experience {
@@ -178,7 +157,7 @@
   font-family: "Black Han Sans";
 }
 #tablet-project02 .project02-main .container .project-content .experience .experience-sub-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
   line-height: 180%;

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import  { useNavigate } from 'react-router-dom';
-import './css/mobile_project01.css';
+import './css/mobile_project02.css';
 
 export default function MobileProject02 () {
 

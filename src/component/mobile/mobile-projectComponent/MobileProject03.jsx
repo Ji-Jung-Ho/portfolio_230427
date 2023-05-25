@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import  { useNavigate } from 'react-router-dom';
-import './css/mobile_project01.css';
+import './css/mobile_project03.css';
 
 export default function MobileProject03 () {
 
@@ -52,9 +52,9 @@ export default function MobileProject03 () {
               <h2 className='development-main-title'>❗개발 내용</h2>
               <h2 className='development-sub-title'><span>HTML, CSS, JavaScript를 사용한 정적 & 동적인 페이지 구현</span></h2>
               <p>
-                HTML로 웹 페이지의 구조를 검색 엔진 최적화 (SEO)를 생각해서 시맨틱 태그를 준수하며 구현하였고, SASS로 페이지의 구조의 스타일을 추가하였습니다.
+                HTML로 웹 페이지의 구조를 검색 엔진 최적화 (SEO)를 생각해서 시맨틱 태그를 준수하며 구현하였고, Sass로 페이지 구조의 스타일을 추가하였습니다.
                 포트폴리오 웹페이지다 보니 기능보다는 시각적인 효과를 중점에 두었기 때문에 애니메이션이나 hover 이벤트들을 사용해서 만들었습니다.
-                정적인 페이지를 구현한 뒤 JavaScript를 사용하여 네비게이션 메뉴 클릭 시 스크롤 이동, 현재 메뉴의 위치를 알려주는 스크롤 이벤트를 구현했습니다.
+                정적인 페이지를 구현한 뒤 a태그를 사용하여 네비게이션 메뉴 클릭 시 스크롤 이동을 구현했습니다.
               </p>
               <h2 className='development-sub-title'><span>React Hooks, Router를 사용한 웹페이지 구현</span></h2>
               <p>
@@ -64,13 +64,21 @@ export default function MobileProject03 () {
                 UseEffect에 Scroll 이벤트를 추가하여 컴포넌트가 렌더링 될때마다 스크롤이 페이지의 최상단으로 구현했습니다.
                 Router를 사용하여 부드러운 페이지 전환을 구현했고, UseNavigate Hook을 사용하여 버튼을 클릭 시 이전페이지로 돌아가는 기능을 구현했습니다.
               </p>
+              <h2 className='development-sub-title'><span>반응형 웹페이지 제작</span></h2>
+              <p>
+                React-responsive를 사용하여 모바일, 태블릿, 데스크탑에 따라 볼 수 있게 반응형 웹페이지로 구현했습니다. media-query를 사용하지 않은 이유는
+                모바일, 태블릿, 데스크탑의 컴포넌트를 따로 만들어  MainComponent에서 useMediaQuery를 통해 DeviceWidth가 각 분기점에 도달하면 MainComponent에 
+                랜더링 되는걸 구현하기 위해서 React-responsive를 사용했습니다. 디바이스의 환경에 따라 사용자의 편의성을 높이기 위해 모바일 버전에서 뒤로가기, 위로이동 버튼
+                을 추가 하였습니다.
+              </p>
             </div>
             <div className="experience">
               <h2 className='experience-main-title'>❗성장 경험</h2>
               <h2 className='experience-sub-title'><span>다양한 JavaScript 라이브러리의 사용</span></h2>
               <p>
-                이 웹페이지를 제작하면서 많은 라이브러리의 사용방법을 배웠습니다. 간단하게 슬라이드를 만들어주는 Swiper, 애니메이션을 효과적으로 만들어주는 React-reveal
-                , SPA에서 페이지 전환을 구현하기 위해 React-Router을 사용했습니다. 다양한 라이브러리를 통해서 이미지 슬라이드, 애니메이션 효과, 페이지 전환을 구현하게 되었습니다.
+                이 웹페이지를 제작하면서 많은 라이브러리의 사용방법을 배웠습니다. 간단하게 슬라이드를 구현할 수 있는 Swiper, 효과적인 애니메이션을 손쉽게 구현할 수 있는 React-reveal
+                , SPA에서 페이지 전환을 구현하기 위한 React-Router, 다양한 디바이스 환경에서 웹페이지를 볼 수 있도록 React-responsive를 사용하여 반응형 웹페이지를 제작했습니다
+                다양한 라이브러리를 통해서 이미지 슬라이드, 애니메이션 효과, 페이지 전환, 반응형 웹페이지 제작을 하는 방법에 익숙해졌습니다.
               </p>
             </div>
           </div>

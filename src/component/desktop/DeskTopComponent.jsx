@@ -15,17 +15,7 @@ export default function DeskTopComponent () {
   const [dbTextui, setDbTextUi] = useState(false);
   const [collaborationTextui, setCollaborationTextUi] = useState(false);
 
-  const [isNavAboutme, setIsNavAboutme]= useState(false);
-  const [isNavEducation, setIsNavEducation]= useState(false);
-  const [isNavWork, setIsNavWork]= useState(false);
-  const [isNavSkill, setIsNavSkill]= useState(false);
-  const [isNavProject, setIsNavProject]= useState(false);
-  const [isNavKurlyTeam, setIsKurlyTeam]= useState(false);
-  const [isNavKurlyReact, setIsNavKurlyReact]= useState(false);
-  const [isNavMyPage, setIsNavMyPage]= useState(false);
-
-  // const [isVisible, setIsVisible] = useState(false);
-
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [scroll, setScrool] = useState(0);
 
   const onScroll=()=>{  
@@ -46,7 +36,7 @@ export default function DeskTopComponent () {
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
     window.scrollTo(0, 0);
-}, []);
+  }, []);
 
 // Skill UI 클릭 시 상태 변경
   const onClickToggleFrontend=()=>{
@@ -64,85 +54,18 @@ export default function DeskTopComponent () {
 
 // 스크롤 값에 따라 section2 aside menu list className 추가
   useEffect(() => {
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-  
-      if (scrollY >= 727 && scrollY <= 1000) {
-        setIsNavAboutme(true);
-        setIsNavEducation(true);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 1001 && scrollY <= 1891) {
-        setIsNavAboutme(true);
-        setIsNavEducation(false);
-        setIsNavWork(true);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 1892 && scrollY <= 2727) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(true);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 2728 && scrollY <= 3727) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(true);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 3728 && scrollY <= 4546) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(true);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 4547 && scrollY <= 5155) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(true);
-      } else {
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      }
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
     };
-  
-    window.addEventListener('scroll', onScroll);
-  
+
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  const scrolltop=()=>{
-    let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    console.log(scrollPosition);
-  }
   return (
     <main id='desktop-main'>
         <section id='section1' className='intro'>
@@ -150,10 +73,10 @@ export default function DeskTopComponent () {
             <aside className="sec1-aside">
               <nav className='menu-bar'>
                 <ul className="main-title">
-                  <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 727)}>ABOUT ME</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 2546)}>SKILLS</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 3333)}>PROJECT</a></li>
+                  <li><a href='#!' onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
+                  <li><a href='#about-me'>ABOUT ME</a></li>
+                  <li><a href='#skill-main-title'>SKILLS</a></li>
+                  <li><a href='#project-main-title'>PROJECT</a></li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -190,73 +113,72 @@ export default function DeskTopComponent () {
             </article>
         </section>
         <section id="section2" className='main-content'>
-          <aside className='sec2-aside'>
-            <Fade fraction={0.3}>
+        <aside className='sec2-aside'>
             <nav className='menu-bar'>
               <ul className="nav-main-title">
                 <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                <button onClick={scrolltop}>스크롤값</button>
                 <li>
-                  <a href='#!' className={isNavAboutme ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 727)}>ABOUT ME</a>
+                  <a href='#about-me' className={scrollPosition > 100 && scrollPosition <= 2000 ? 'nav-title-active' : ''}>ABOUT ME</a>
                   <div className="project-submenu">
                     <ul>
-                      <li><a href="#!" className={isNavEducation ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 999)}>- Education</a></li>
-                      <li><a href="#!" className={isNavWork ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 1759)}>- Work experience</a></li>
+                      <li><a href="#education" className={scrollPosition >= 450 && scrollPosition <= 1300 ? 'nav-subtitle-active' : ''}>- Education</a></li>
+                      <li><a href="#work-experience" className={scrollPosition > 1301 && scrollPosition <= 2000 ? 'nav-subtitle-active' : ''}>- Work experience</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><a href='#!' className={isNavSkill ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 2605)}>SKILLS</a></li>
+                <li><a href='#skill-main-title' className={scrollPosition > 2001 && scrollPosition <= 2800 ? 'nav-title-active' : ''}>SKILLS</a></li>
                 <li>
-                  <a href='#!' className={isNavProject ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 3333)}>PROJECT</a>
+                  <a href='#project-main-title' className={scrollPosition > 2801 && scrollPosition <= 5500 ? 'nav-title-active' : ''}>PROJECT</a>
                   <div className='project-submenu'>
                     <ul>
-                      <li><a href="#!" className={isNavKurlyTeam ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 3547)}>- Kurly Team Project</a></li>
-                      <li><a href="#!" className={isNavKurlyReact ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 4347)}>- Kurly 개인 Porject</a></li>
-                      <li><a href="#!" className={isNavMyPage ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 5065)}>- 나의 포트폴리오 개발</a></li>
+                      <li><a href="#content-01" className={scrollPosition > 2801 && scrollPosition <= 3800 ? 'nav-subtitle-active' : ''}>- Kurly Team Project</a></li>
+                      <li><a href="#content-02" className={scrollPosition > 3801 && scrollPosition <= 4500 ? 'nav-subtitle-active' : ''}>- Kurly 개인 Porject</a></li>
+                      <li><a href="#content-03" className={scrollPosition > 4501 && scrollPosition <= 5500 ? 'nav-subtitle-active' : ''}>- 나만의 포트폴리오</a></li>
                     </ul>
                   </div>
                 </li>
               </ul>
             </nav>
-            </Fade>
           </aside>
           <article className='sec2-article'>
           <Fade fraction={0.5}>
-            <div className="main-title">
-              <h1><span>ABOUT ME</span></h1>
-            </div>
-            <div className="about-row-box">
-              <div className="about-me">
-                <div className="row1-left">
-                  <div className="name">
-                    <img src="./img/user-info.png" alt="name" />
-                    <h2>이름</h2>
+            <div id="about-me">
+              <div className="main-title">
+                <h1><span>ABOUT ME</span></h1>
+              </div>
+              <div className="about-row-box">
+                <div className="about-me">
+                  <div className="row1-left">
+                    <div className="name">
+                      <img src="./img/user-info.png" alt="name" />
+                      <h2>이름</h2>
+                    </div>
+                    <div className="detail">
+                        <p>지정호</p>
+                    </div>
                   </div>
-                  <div className="detail">
-                      <p>지정호</p>
+                  <div className="row1-center">
+                    <div className="birth">
+                      <img src="./img/birth.png" alt="name" />
+                      <h2>생년월일</h2>
+                    </div>
+                    <div className="detail">
+                        <p>1996.09.04</p>
+                    </div>
                   </div>
-                </div>
-                <div className="row1-center">
-                  <div className="birth">
-                    <img src="./img/birth.png" alt="name" />
-                    <h2>생년월일</h2>
-                  </div>
-                  <div className="detail">
-                      <p>1996.09.04</p>
-                  </div>
-                </div>
-                <div className="row1-right">
-                <div className="phone-number">
-                    <img src="./img/phone-number.png" alt="name" />
-                    <h2>전화번호</h2>
-                  </div>
-                  <div className="detail">
-                      <p>010-5501-7918</p>
+                  <div className="row1-right">
+                  <div className="phone-number">
+                      <img src="./img/phone-number.png" alt="name" />
+                      <h2>전화번호</h2>
+                    </div>
+                    <div className="detail">
+                        <p>010-5501-7918</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="education">
+            <div id="education">
               <div className="edcation-main-title">
                 <h2>#Educataion</h2>
               </div>
@@ -279,9 +201,9 @@ export default function DeskTopComponent () {
                 </div>
               </div>
             </div>
-            <div className="work-experience">
+            <div id="work-experience">
               <div className="work-experience-main-title">
-                <h2>#Work-Experience</h2>
+                <h2>#Work</h2>
               </div>
               <div className="work-experience-content">
                 <h1>카카오게임즈 - 모바일 운영팀 (2020.06.23 ~ 2022.06.21)</h1>
@@ -303,7 +225,7 @@ export default function DeskTopComponent () {
             </div>
             </Fade>
             <Fade fraction={0.3}>
-            <div className="skill-main-title">
+            <div id="skill-main-title">
               <h1><span>SKILLS</span></h1>
             </div>
             <div className="skill-content">
@@ -395,12 +317,12 @@ export default function DeskTopComponent () {
             </div>         
             </div>
             </Fade>
-            <div className="project-main-title">
+            <div id="project-main-title">
               <h1><span>PROJECT</span></h1>
             </div>
             <div className="project-content">
               <Fade fraction={0.3}>
-              <div className="content-01">
+              <div id="content-01">
                 <div className="content-title">
                   <h2>Kurly Project (팀)</h2>
                 </div>
@@ -450,11 +372,11 @@ export default function DeskTopComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;javascript,&nbsp;jQuery</p>
+                        <p className='right-p'>HTML,CSS,javascript,jQuery</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>
-                        <p className='right-p'>PHP,&nbsp;Node.js</p>
+                        <p className='right-p'>PHP,Node.js</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>DB :</p>
@@ -472,7 +394,7 @@ export default function DeskTopComponent () {
                   </div>
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project01'>
+                  <Link to='/desktop-project01'>
                     <button >
                     자세히보기
                     </button>
@@ -481,7 +403,7 @@ export default function DeskTopComponent () {
               </div>
               </Fade>
               <Fade fraction={0.3}>
-              <div className="content-02">
+              <div id="content-02">
                 <div className="content-title">
                   <h2>Kurly Project (개인)</h2>
                 </div>
@@ -531,11 +453,11 @@ export default function DeskTopComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;javascript,&nbsp;jQuery&nbsp;React</p>
+                        <p className='right-p'>HTML,CSS,javascript,jQuery,React</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>
-                        <p className='right-p'>PHP,&nbsp;Node.js</p>
+                        <p className='right-p'>PHP,Node.js</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>DB :</p>
@@ -554,7 +476,7 @@ export default function DeskTopComponent () {
                   
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project02'>
+                  <Link to='/desktop-project02'>
                     <button >
                     자세히보기
                     </button>
@@ -563,9 +485,9 @@ export default function DeskTopComponent () {
               </div>
               </Fade>
               <Fade fraction={0.3}>
-              <div className="content-03">
+              <div id="content-03">
                 <div className="content-title">
-                  <h2>My Portfolio page Project</h2>
+                  <h2>My Portfolio</h2>
                 </div>
                 <div className="project-info-03">
                   <img src="./img/mypage.png" alt="" />
@@ -582,7 +504,7 @@ export default function DeskTopComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;Javascript,&nbsp;React</p>
+                        <p className='right-p'>HTML,CSS,Javascript,React</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>
@@ -601,7 +523,7 @@ export default function DeskTopComponent () {
                   
                 </div>
                 <div className="view-detail-btn">
-                  <Link to='/project03'>
+                  <Link to='/desktop-project03'>
                     <button >
                     자세히보기
                     </button>

@@ -63,15 +63,15 @@ export default function MobileComponent () {
             <aside className="sec1-aside">
               <nav className='menu-bar'>
                 <ul className="main-title">
-                  <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 1619)}>ABOUT ME</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 3247)}>SKILLS</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 4796)}>PROJECT</a></li>
+                  <li><a href="#!">Home</a></li>
+                  <li><a href='#about-me'>ABOUT ME</a></li>
+                  <li><a href='#skill-main-title'>SKILLS</a></li>
+                  <li><a href='#project-main-title'>PROJECT</a></li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
                   <li><a href="https://github.com/Ji-Jung-Ho" target="_blank">github.com/Ji-Jung-Ho</a></li>
-                  <li><p>Last Update : 2023-05-15</p></li>
+                  <li><p>Last Update : 2023-05-25</p></li>
                 </ul>
               </nav>
             </aside>
@@ -98,7 +98,7 @@ export default function MobileComponent () {
         </section>
         <section id="section2" className='main-content'>
           <article className='sec2-article'>
-            <div className="about-me">
+            <div id="about-me">
               <div className="main-title">
                 <h1><span>ABOUT ME</span></h1>
               </div>
@@ -177,7 +177,7 @@ export default function MobileComponent () {
                 </ul>
               </div>
             </div>
-            <div className="skill-main-title">
+            <div id="skill-main-title">
               <h1><span>SKILLS</span></h1>
             </div>
             <div className="skill-content">
@@ -270,7 +270,7 @@ export default function MobileComponent () {
               <h2>❗스킬 화면을 터치해 주세요!</h2>
             </div>         
             </div>
-            <div className="project-main-title">
+            <div id="project-main-title">
               <h1><span>PROJECT</span></h1>
             </div>
             <div className="project-content">
@@ -435,7 +435,7 @@ export default function MobileComponent () {
               </div>
               <div className="content-03">
                 <div className="content-title">
-                  <h2>My Portfolio page Project</h2>
+                  <h2>My Portfolio</h2>
                 </div>
                 <div className="project-info-03">
                   <img src="./img/mypage.png" alt="" />

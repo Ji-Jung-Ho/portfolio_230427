@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
@@ -14,17 +14,8 @@ export default function TabletComponent () {
   const [backendTextui, setBackendTextUi] = useState(false);
   const [dbTextui, setDbTextUi] = useState(false);
   const [collaborationTextui, setCollaborationTextUi] = useState(false);
-
-  const [isNavAboutme, setIsNavAboutme]= useState(false);
-  const [isNavEducation, setIsNavEducation]= useState(false);
-  const [isNavWork, setIsNavWork]= useState(false);
-  const [isNavSkill, setIsNavSkill]= useState(false);
-  const [isNavProject, setIsNavProject]= useState(false);
-  const [isNavKurlyTeam, setIsKurlyTeam]= useState(false);
-  const [isNavKurlyReact, setIsNavKurlyReact]= useState(false);
-  const [isNavMyPage, setIsNavMyPage]= useState(false);
-
   const [scroll, setScrool] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const onScroll=()=>{  
     setScrool(window.scrollY || document.documentElement.scrollTop);
@@ -60,80 +51,17 @@ export default function TabletComponent () {
     setCollaborationTextUi (collaborationTextui => !collaborationTextui);
   }
 
-// 스크롤 값에 따라 section2 aside menu list className 추가
+// 스크롤 위치에 따라 scrollPosition 상태 업데이트 함수
   useEffect(() => {
-    const onScroll = () => {
-      const scrollY = window.scrollY;
-  
-      if (scrollY >= 727 && scrollY <= 1000) {
-        setIsNavAboutme(true);
-        setIsNavEducation(true);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 1001 && scrollY <= 1891) {
-        setIsNavAboutme(true);
-        setIsNavEducation(false);
-        setIsNavWork(true);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 1892 && scrollY <= 2727) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(true);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 2728 && scrollY <= 3727) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(true);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 3728 && scrollY <= 4546) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(true);
-        setIsNavMyPage(false);
-      } else if (scrollY >= 4547 && scrollY <= 5155) {
-        setIsNavAboutme(false);
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(true);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(true);
-      } else {
-        setIsNavEducation(false);
-        setIsNavWork(false);
-        setIsNavSkill(false);
-        setIsNavProject(false);
-        setIsKurlyTeam(false);
-        setIsNavKurlyReact(false);
-        setIsNavMyPage(false);
-      }
+    const handleScroll = () => {
+      const position = window.scrollY;
+      setScrollPosition(position);
     };
-  
-    window.addEventListener('scroll', onScroll);
-  
+
+    window.addEventListener('scroll', handleScroll);
+
     return () => {
-      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -147,10 +75,10 @@ export default function TabletComponent () {
             <aside className="sec1-aside">
               <nav className='menu-bar'>
                 <ul className="main-title">
-                  <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 727)}>ABOUT ME</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 2546)}>SKILLS</a></li>
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 3333)}>PROJECT</a></li>
+                  <li><a href='#!' onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
+                  <li><a href='#about-me'>ABOUT ME</a></li>
+                  <li><a href='#skill-main-title'>SKILLS</a></li>
+                  <li><a href='#project-main-title'>PROJECT</a></li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -189,24 +117,23 @@ export default function TabletComponent () {
             <nav className='menu-bar'>
               <ul className="nav-main-title">
                 <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                <button onClick={scrolltop}>스크롤값</button>
                 <li>
-                  <a href='#!' className={isNavAboutme ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 727)}>ABOUT ME</a>
+                  <a href='#about-me' className={scrollPosition > 800 && scrollPosition < 2600 ? 'nav-title-active' : ''}>ABOUT ME</a>
                   <div className="project-submenu">
                     <ul>
-                      <li><a href="#!" className={isNavEducation ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 999)}>- Education</a></li>
-                      <li><a href="#!" className={isNavWork ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 1759)}>- Work experience</a></li>
+                      <li><a href="#education" className={scrollPosition > 800 && scrollPosition <= 1800 ? 'nav-subtitle-active' : ''}>- Education</a></li>
+                      <li><a href="#work-experience" className={scrollPosition > 1801 && scrollPosition <= 2600 ? 'nav-subtitle-active' : ''}>- Work experience</a></li>
                     </ul>
                   </div>
                 </li>
-                <li><a href='#!' className={isNavSkill ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 2605)}>SKILLS</a></li>
+                <li><a href='#skill-main-title' className={scrollPosition > 2601 && scrollPosition <= 3900 ? 'nav-title-active' : ''}>SKILLS</a></li>
                 <li>
-                  <a href='#!' className={isNavProject ? 'nav-title-btn' : ''} onClick={(e) => onClickmenu(e, 3333)}>PROJECT</a>
+                  <a href='#project-main-title' className={scrollPosition > 3901 && scrollPosition <= 7900 ? 'nav-title-active' : ''}>PROJECT</a>
                   <div className='project-submenu'>
                     <ul>
-                      <li><a href="#!" className={isNavKurlyTeam ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 3547)}>- Kurly Team Project</a></li>
-                      <li><a href="#!" className={isNavKurlyReact ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 4347)}>- Kurly 개인 Porject</a></li>
-                      <li><a href="#!" className={isNavMyPage ? 'nav-subtitle-btn' : ''} onClick={(e) => onClickmenu(e, 5065)}>- 나의 포트폴리오 개발</a></li>
+                      <li><a href="#content-01" className={scrollPosition > 3901 && scrollPosition <= 5400 ? 'nav-subtitle-active' : ''}>- Kurly Team Project</a></li>
+                      <li><a href="#content-02" className={scrollPosition > 5401 && scrollPosition <= 6800 ? 'nav-subtitle-active' : ''}>- Kurly 개인 Porject</a></li>
+                      <li><a href="#content-03" className={scrollPosition > 6801 && scrollPosition <= 7900 ? 'nav-subtitle-active' : ''}>- 나만의 포트폴리오</a></li>
                     </ul>
                   </div>
                 </li>
@@ -214,7 +141,7 @@ export default function TabletComponent () {
             </nav>
           </aside>
           <article className='sec2-article'>
-            <div className="about-me">
+            <div id="about-me">
               <div className="main-title">
                 <h1><span>ABOUT ME</span></h1>
               </div>
@@ -250,7 +177,7 @@ export default function TabletComponent () {
                 </div>
               </div>
             </div>
-            <div className="education">
+            <div id="education">
               <div className="edcation-main-title">
                 <h2>#Educataion</h2>
               </div>
@@ -273,9 +200,9 @@ export default function TabletComponent () {
                 </div>
               </div>
             </div>
-            <div className="work-experience">
+            <div id="work-experience">
               <div className="work-experience-main-title">
-                <h2>#Work-Experience</h2>
+                <h2>#Work</h2>
               </div>
               <div className="work-experience-content">
                 <h1>카카오게임즈 - 모바일 운영팀 (2020.06.23 ~ 2022.06.21)</h1>
@@ -295,10 +222,10 @@ export default function TabletComponent () {
                 </ul>
               </div>
             </div>
-            <div className="skill-main-title">
+            <div id="skill-main-title">
               <h1><span>SKILLS</span></h1>
             </div>
-            <div className="skill-content">
+            <div id="skill-content">
               <div className="skill-column-1">
                 <div className={frontendTextUi ? "content-box frontend on" : "content-box frontend"} onClick={onClickToggleFrontend}>
                   <p className='content-title'>Frontend</p>
@@ -325,7 +252,7 @@ export default function TabletComponent () {
                         <li>- state, props 개념 및 데이터의 흐름 이해</li>
                         <li>- Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험</li>
                         <li>- Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능</li>
-                        <li>- React-router-dom을 사용한 페이지</li>
+                        <li>- React-router-dom을 사용한 페이지 이동 구현</li>
                         </ul>
                       </div>
                     </div>
@@ -390,11 +317,11 @@ export default function TabletComponent () {
               <h2>❗스킬 화면을 클릭해 주세요!</h2>
             </div>         
             </div>
-            <div className="project-main-title">
+            <div id="project-main-title">
               <h1><span>PROJECT</span></h1>
             </div>
-            <div className="project-content">
-              <div className="content-01">
+            <div id="project-content">
+              <div id="content-01">
                 <div className="content-title">
                   <h2>Kurly Project (팀)</h2>
                 </div>
@@ -473,7 +400,7 @@ export default function TabletComponent () {
                   </Link>
                 </div>
               </div>
-              <div className="content-02">
+              <div id="content-02">
                 <div className="content-title">
                   <h2>Kurly Project (개인)</h2>
                 </div>
@@ -553,9 +480,9 @@ export default function TabletComponent () {
                   </Link>
                 </div>
               </div>
-              <div className="content-03">
+              <div id="content-03">
                 <div className="content-title">
-                  <h2>My Portfolio page Project</h2>
+                  <h2>My Portfolio</h2>
                 </div>
                 <div className="project-info-03">
                   <img src="./img/mypage.png" alt="" />
