@@ -3,6 +3,7 @@ import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import {Fade, Flip} from 'react-reveal';
+import { Link as ScrollLink } from 'react-scroll';
 import 'swiper/swiper-bundle.css';
 import './css/desktop-main.css'
 
@@ -14,24 +15,11 @@ export default function DeskTopComponent () {
   const [backendTextui, setBackendTextUi] = useState(false);
   const [dbTextui, setDbTextUi] = useState(false);
   const [collaborationTextui, setCollaborationTextUi] = useState(false);
-
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [scroll, setScrool] = useState(0);
 
   const onScroll=()=>{  
     setScrool(window.scrollY || document.documentElement.scrollTop);
   }
-  // 클릭한 메뉴로 부드럽게 이동
-  const scrollToContent = (top) => {
-    window.scrollTo({top: top, behavior: 'smooth'});
-  }
-
-  // section1,2 aside menu 클릭 시 해당 탑 값으로 스크롤 이동
-  const onClickmenu = (e, top) => {
-    e.preventDefault();
-    scrollToContent(top);
-  };
-
   // 컴포넌트가 실행될때(새로고침 시) 최초 한번만 실행 
   useEffect(() => {
     window.addEventListener("scroll", onScroll);
@@ -52,20 +40,6 @@ export default function DeskTopComponent () {
     setCollaborationTextUi (collaborationTextui => !collaborationTextui);
   }
 
-// 스크롤 값에 따라 section2 aside menu list className 추가
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
     <main id='desktop-main'>
         <section id='section1' className='intro'>
@@ -73,10 +47,42 @@ export default function DeskTopComponent () {
             <aside className="sec1-aside">
               <nav className='menu-bar'>
                 <ul className="main-title">
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#about-me'>ABOUT ME</a></li>
-                  <li><a href='#skill-main-title'>SKILLS</a></li>
-                  <li><a href='#project-main-title'>PROJECT</a></li>
+                  <li>
+                    <ScrollLink
+                     to='section1'
+                     spy={true}
+                     smooth={true}
+                     >
+                    Home
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='aboutMe'
+                     spy={true}
+                     smooth={true}
+                     >
+                    ABOUT ME
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='skillMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    SKILLS
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='projectMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    PROJECT
+                    </ScrollLink>
+                  </li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -116,24 +122,91 @@ export default function DeskTopComponent () {
         <aside className='sec2-aside'>
             <nav className='menu-bar'>
               <ul className="nav-main-title">
-                <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
                 <li>
-                  <a href='#about-me' className={scrollPosition > 100 && scrollPosition <= 2000 ? 'nav-title-active' : ''}>ABOUT ME</a>
+                  <ScrollLink 
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  >
+                  Home
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink 
+                  to='aboutMe' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  ABOUT ME
+                  </ScrollLink>
                   <div className="project-submenu">
                     <ul>
-                      <li><a href="#education" className={scrollPosition >= 450 && scrollPosition <= 1300 ? 'nav-subtitle-active' : ''}>- Education</a></li>
-                      <li><a href="#work-experience" className={scrollPosition > 1301 && scrollPosition <= 2000 ? 'nav-subtitle-active' : ''}>- Work experience</a></li>
+                      <li>
+                        <ScrollLink 
+                        to="education"
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Education
+                        </ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="workExperience"
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Work experience
+                        </ScrollLink>
+                      </li>
                     </ul>
                   </div>
                 </li>
-                <li><a href='#skill-main-title' className={scrollPosition > 2001 && scrollPosition <= 2800 ? 'nav-title-active' : ''}>SKILLS</a></li>
                 <li>
-                  <a href='#project-main-title' className={scrollPosition > 2801 && scrollPosition <= 5500 ? 'nav-title-active' : ''}>PROJECT</a>
+                  <ScrollLink 
+                  to='skillMainTitle' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  SKILLS
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink 
+                  to='projectMainTitle' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  PROJECT
+                  </ScrollLink>
                   <div className='project-submenu'>
                     <ul>
-                      <li><a href="#content-01" className={scrollPosition > 2801 && scrollPosition <= 3800 ? 'nav-subtitle-active' : ''}>- Kurly Team Project</a></li>
-                      <li><a href="#content-02" className={scrollPosition > 3801 && scrollPosition <= 4500 ? 'nav-subtitle-active' : ''}>- Kurly 개인 Porject</a></li>
-                      <li><a href="#content-03" className={scrollPosition > 4501 && scrollPosition <= 5500 ? 'nav-subtitle-active' : ''}>- 나만의 포트폴리오</a></li>
+                      <li>
+                        <ScrollLink 
+                        to="content01" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Kurly Team Project
+                        </ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="content02" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Kurly 개인 Porject</ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="content03" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - 나만의 포트폴리오
+                        </ScrollLink>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -142,7 +215,7 @@ export default function DeskTopComponent () {
           </aside>
           <article className='sec2-article'>
           <Fade fraction={0.5}>
-            <div id="about-me">
+            <div id="aboutMe">
               <div className="main-title">
                 <h1><span>ABOUT ME</span></h1>
               </div>
@@ -201,7 +274,7 @@ export default function DeskTopComponent () {
                 </div>
               </div>
             </div>
-            <div id="work-experience">
+            <div id="workExperience">
               <div className="work-experience-main-title">
                 <h2>#Work</h2>
               </div>
@@ -225,7 +298,7 @@ export default function DeskTopComponent () {
             </div>
             </Fade>
             <Fade fraction={0.3}>
-            <div id="skill-main-title">
+            <div id="skillMainTitle">
               <h1><span>SKILLS</span></h1>
             </div>
             <div className="skill-content">
@@ -317,18 +390,19 @@ export default function DeskTopComponent () {
             </div>         
             </div>
             </Fade>
-            <div id="project-main-title">
+            <div id="projectMainTitle">
               <h1><span>PROJECT</span></h1>
             </div>
             <div className="project-content">
               <Fade fraction={0.3}>
-              <div id="content-01">
+              <div id="content01">
                 <div className="content-title">
                   <h2>Kurly Project (팀)</h2>
                 </div>
                 <div className="project-info-01">
                   <div className="swiper-container">
                     <Swiper
+                      spaceBetween={30}
                       pagination = {{
                         el: '.swiper-pagination-01',
                         clickable: true,
@@ -403,13 +477,18 @@ export default function DeskTopComponent () {
               </div>
               </Fade>
               <Fade fraction={0.3}>
-              <div id="content-02">
+              <div id="content02">
                 <div className="content-title">
                   <h2>Kurly Project (개인)</h2>
                 </div>
                 <div className="project-info-02">
                   <div className="swiper-container">
                     <Swiper
+                      spaceBetween={30}
+                      autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                      }}  
                       pagination = {{
                         el: '.swiper-pagination-02',
                         clickable: true,
@@ -485,7 +564,7 @@ export default function DeskTopComponent () {
               </div>
               </Fade>
               <Fade fraction={0.3}>
-              <div id="content-03">
+              <div id="content03">
                 <div className="content-title">
                   <h2>My Portfolio</h2>
                 </div>
@@ -520,7 +599,6 @@ export default function DeskTopComponent () {
                       </div>
                     </div>
                   </div>
-                  
                 </div>
                 <div className="view-detail-btn">
                   <Link to='/desktop-project03'>
@@ -532,7 +610,6 @@ export default function DeskTopComponent () {
               </div>
               </Fade>
             </div>
-            
           </article>
         </section>
         <div className="footer">

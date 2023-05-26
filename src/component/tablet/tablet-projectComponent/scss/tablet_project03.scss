@@ -36,13 +36,13 @@
     padding: 70px 0;
     background:url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
     background-size: cover;
+    user-select: none;
     .container {
       width: 80vw;
       margin: 0 auto;
       padding: 20px;
       border-radius: 5px;
       background-color: #fff;
-      opacity: 0.9;
       .main-title {
         width: 100%;
         display: flex;
@@ -121,6 +121,13 @@
             font-size: 20px;
             padding-bottom: 5px;
             border-bottom: 1px solid #000;
+            span {
+              color: #72b2f3;
+              font-size: 20px;
+              font-weight: 700;
+              text-decoration: underline;
+              text-underline-position: under;
+            }
           }
         }
         .experience {
@@ -147,6 +154,12 @@
             font-size: 20px;
             padding-bottom: 5px;
             border-bottom: 1px solid #000;
+            span {
+              background-color: #8dbdee;
+              color: #000;
+              border-radius: 3px;
+              padding: 3px;
+            }
           }
         }
       }

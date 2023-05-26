@@ -37,6 +37,9 @@
   padding: 70px 0;
   background: url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
   background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #tablet-project03 .project03-main .container {
   width: 80vw;
@@ -44,7 +47,6 @@
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
-  opacity: 0.9;
 }
 #tablet-project03 .project03-main .container .main-title {
   width: 100%;
@@ -127,6 +129,13 @@
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
 }
+#tablet-project03 .project03-main .container .project-content .development-part p span {
+  color: #72b2f3;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position: under;
+}
 #tablet-project03 .project03-main .container .project-content .experience {
   width: 100%;
 }
@@ -152,4 +161,10 @@
   font-size: 20px;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
+}
+#tablet-project03 .project03-main .container .project-content .experience p span {
+  background-color: #8dbdee;
+  color: #000;
+  border-radius: 3px;
+  padding: 3px;
 }

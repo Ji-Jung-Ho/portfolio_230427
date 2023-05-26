@@ -3,6 +3,7 @@ import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import {Fade, Flip} from 'react-reveal';
+import { Link as ScrollLink } from 'react-scroll';
 import 'swiper/swiper-bundle.css';
 import './css/tablet_main.css'
 
@@ -15,7 +16,6 @@ export default function TabletComponent () {
   const [dbTextui, setDbTextUi] = useState(false);
   const [collaborationTextui, setCollaborationTextUi] = useState(false);
   const [scroll, setScrool] = useState(0);
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   const onScroll=()=>{  
     setScrool(window.scrollY || document.documentElement.scrollTop);
@@ -51,20 +51,6 @@ export default function TabletComponent () {
     setCollaborationTextUi (collaborationTextui => !collaborationTextui);
   }
 
-// 스크롤 위치에 따라 scrollPosition 상태 업데이트 함수
-  useEffect(() => {
-    const handleScroll = () => {
-      const position = window.scrollY;
-      setScrollPosition(position);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   const scrolltop=()=>{
     let scrollPosition = window.scrollY || document.documentElement.scrollTop;
     console.log(scrollPosition);
@@ -74,11 +60,43 @@ export default function TabletComponent () {
         <section id='section1' className='intro'>
             <aside className="sec1-aside">
               <nav className='menu-bar'>
-                <ul className="main-title">
-                  <li><a href='#!' onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
-                  <li><a href='#about-me'>ABOUT ME</a></li>
-                  <li><a href='#skill-main-title'>SKILLS</a></li>
-                  <li><a href='#project-main-title'>PROJECT</a></li>
+              <ul className="main-title">
+                  <li>
+                    <ScrollLink
+                     to='section1'
+                     spy={true}
+                     smooth={true}
+                     >
+                    Home
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='aboutMe'
+                     spy={true}
+                     smooth={true}
+                     >
+                    ABOUT ME
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='skillMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    SKILLS
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='projectMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    PROJECT
+                    </ScrollLink>
+                  </li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -115,25 +133,92 @@ export default function TabletComponent () {
         <section id="section2" className='main-content'>
           <aside className='sec2-aside'>
             <nav className='menu-bar'>
-              <ul className="nav-main-title">
-                <li><a href="#!" onClick={(e) => onClickmenu(e, 0)}>Home</a></li>
+            <ul className="nav-main-title">
                 <li>
-                  <a href='#about-me' className={scrollPosition > 800 && scrollPosition < 2600 ? 'nav-title-active' : ''}>ABOUT ME</a>
+                  <ScrollLink 
+                  to="section1"
+                  spy={true}
+                  smooth={true}
+                  >
+                  Home
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink 
+                  to='aboutMe' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  ABOUT ME
+                  </ScrollLink>
                   <div className="project-submenu">
                     <ul>
-                      <li><a href="#education" className={scrollPosition > 800 && scrollPosition <= 1800 ? 'nav-subtitle-active' : ''}>- Education</a></li>
-                      <li><a href="#work-experience" className={scrollPosition > 1801 && scrollPosition <= 2600 ? 'nav-subtitle-active' : ''}>- Work experience</a></li>
+                      <li>
+                        <ScrollLink 
+                        to="education"
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Education
+                        </ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="workExperience"
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Work experience
+                        </ScrollLink>
+                      </li>
                     </ul>
                   </div>
                 </li>
-                <li><a href='#skill-main-title' className={scrollPosition > 2601 && scrollPosition <= 3900 ? 'nav-title-active' : ''}>SKILLS</a></li>
                 <li>
-                  <a href='#project-main-title' className={scrollPosition > 3901 && scrollPosition <= 7900 ? 'nav-title-active' : ''}>PROJECT</a>
+                  <ScrollLink 
+                  to='skillMainTitle' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  SKILLS
+                  </ScrollLink>
+                </li>
+                <li>
+                  <ScrollLink 
+                  to='projectMainTitle' 
+                  spy={true}
+                  smooth={true}
+                  >
+                  PROJECT
+                  </ScrollLink>
                   <div className='project-submenu'>
                     <ul>
-                      <li><a href="#content-01" className={scrollPosition > 3901 && scrollPosition <= 5400 ? 'nav-subtitle-active' : ''}>- Kurly Team Project</a></li>
-                      <li><a href="#content-02" className={scrollPosition > 5401 && scrollPosition <= 6800 ? 'nav-subtitle-active' : ''}>- Kurly 개인 Porject</a></li>
-                      <li><a href="#content-03" className={scrollPosition > 6801 && scrollPosition <= 7900 ? 'nav-subtitle-active' : ''}>- 나만의 포트폴리오</a></li>
+                      <li>
+                        <ScrollLink 
+                        to="content01" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Kurly Team Project
+                        </ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="content02" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - Kurly 개인 Porject</ScrollLink>
+                      </li>
+                      <li>
+                        <ScrollLink 
+                        to="content03" 
+                        spy={true}
+                        smooth={true}
+                        >
+                        - 나만의 포트폴리오
+                        </ScrollLink>
+                      </li>
                     </ul>
                   </div>
                 </li>
@@ -141,7 +226,7 @@ export default function TabletComponent () {
             </nav>
           </aside>
           <article className='sec2-article'>
-            <div id="about-me">
+            <div id="aboutMe">
               <div className="main-title">
                 <h1><span>ABOUT ME</span></h1>
               </div>
@@ -200,7 +285,7 @@ export default function TabletComponent () {
                 </div>
               </div>
             </div>
-            <div id="work-experience">
+            <div id="workExperience">
               <div className="work-experience-main-title">
                 <h2>#Work</h2>
               </div>
@@ -222,10 +307,10 @@ export default function TabletComponent () {
                 </ul>
               </div>
             </div>
-            <div id="skill-main-title">
+            <div id="skillMainTitle">
               <h1><span>SKILLS</span></h1>
             </div>
-            <div id="skill-content">
+            <div className="skill-content">
               <div className="skill-column-1">
                 <div className={frontendTextUi ? "content-box frontend on" : "content-box frontend"} onClick={onClickToggleFrontend}>
                   <p className='content-title'>Frontend</p>
@@ -317,11 +402,11 @@ export default function TabletComponent () {
               <h2>❗스킬 화면을 클릭해 주세요!</h2>
             </div>         
             </div>
-            <div id="project-main-title">
+            <div id="projectMainTitle">
               <h1><span>PROJECT</span></h1>
             </div>
-            <div id="project-content">
-              <div id="content-01">
+            <div className="project-content">
+              <div id="content01">
                 <div className="content-title">
                   <h2>Kurly Project (팀)</h2>
                 </div>
@@ -400,7 +485,7 @@ export default function TabletComponent () {
                   </Link>
                 </div>
               </div>
-              <div id="content-02">
+              <div id="content02">
                 <div className="content-title">
                   <h2>Kurly Project (개인)</h2>
                 </div>
@@ -480,7 +565,7 @@ export default function TabletComponent () {
                   </Link>
                 </div>
               </div>
-              <div id="content-03">
+              <div id="content03">
                 <div className="content-title">
                   <h2>My Portfolio</h2>
                 </div>

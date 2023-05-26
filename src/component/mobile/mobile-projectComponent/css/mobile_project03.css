@@ -5,13 +5,15 @@
   width: 100%;
   background: url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
   background-size: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #mobile-project03 .project03-main .container {
   width: 100%;
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
-  opacity: 0.9;
 }
 #mobile-project03 .project03-main .container .main-title {
   width: 100%;
@@ -26,7 +28,7 @@
   margin-right: 10px;
 }
 #mobile-project03 .project03-main .container .main-title h2 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
 }
 #mobile-project03 .project03-main .container .project-content {
@@ -38,12 +40,12 @@
   border-bottom: 1px solid #000;
 }
 #mobile-project03 .project03-main .container .project-content .project-info h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
 }
 #mobile-project03 .project03-main .container .project-content .project-info p {
-  line-height: 180%;
+  line-height: 150%;
   font-size: 15px;
   font-weight: 700;
 }
@@ -69,7 +71,7 @@
 }
 #mobile-project03 .project03-main .container .project-content .project-info ul {
   width: 100%;
-  line-height: 180%;
+  line-height: 150%;
   text-indent: -17px;
   padding-left: 15px;
 }
@@ -82,15 +84,15 @@
   border-bottom: 1px solid #000;
 }
 #mobile-project03 .project03-main .container .project-content .development-part .development-main-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
 }
 #mobile-project03 .project03-main .container .project-content .development-part .development-sub-title {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
-  line-height: 180%;
+  line-height: 150%;
 }
 #mobile-project03 .project03-main .container .project-content .development-part .development-sub-title span {
   background-color: #8dbdee;
@@ -99,24 +101,30 @@
   padding: 1px;
 }
 #mobile-project03 .project03-main .container .project-content .development-part p {
-  line-height: 180%;
+  line-height: 150%;
   font-size: 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
+}
+#mobile-project03 .project03-main .container .project-content .development-part p span {
+  color: #72b2f3;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 #mobile-project03 .project03-main .container .project-content .experience {
   width: 100%;
 }
 #mobile-project03 .project03-main .container .project-content .experience .experience-main-title {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   padding: 10px 0;
 }
 #mobile-project03 .project03-main .container .project-content .experience .experience-sub-title {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
-  line-height: 180%;
+  line-height: 150%;
 }
 #mobile-project03 .project03-main .container .project-content .experience .experience-sub-title span {
   background-color: #8dbdee;
@@ -125,7 +133,7 @@
   padding: 1px;
 }
 #mobile-project03 .project03-main .container .project-content .experience p {
-  line-height: 180%;
+  line-height: 150%;
   font-size: 15px;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;

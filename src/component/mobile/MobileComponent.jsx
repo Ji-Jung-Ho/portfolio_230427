@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import  { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination } from "swiper";
+import { Link as ScrollLink } from 'react-scroll';
 import 'swiper/swiper-bundle.css';
 import './css/mobile_main.css'
 
@@ -62,11 +63,43 @@ export default function MobileComponent () {
         <section id='section1' className='intro'>
             <aside className="sec1-aside">
               <nav className='menu-bar'>
-                <ul className="main-title">
-                  <li><a href="#!">Home</a></li>
-                  <li><a href='#about-me'>ABOUT ME</a></li>
-                  <li><a href='#skill-main-title'>SKILLS</a></li>
-                  <li><a href='#project-main-title'>PROJECT</a></li>
+              <ul className="main-title">
+                  <li>
+                    <ScrollLink
+                     to='section1'
+                     spy={true}
+                     smooth={true}
+                     >
+                    Home
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='aboutMe'
+                     spy={true}
+                     smooth={true}
+                     >
+                    ABOUT ME
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='skillMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    SKILLS
+                    </ScrollLink>
+                  </li>
+                  <li>
+                    <ScrollLink
+                     to='projectMainTitle'
+                     spy={true}
+                     smooth={true}
+                     >
+                    PROJECT
+                    </ScrollLink>
+                  </li>
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
@@ -98,7 +131,7 @@ export default function MobileComponent () {
         </section>
         <section id="section2" className='main-content'>
           <article className='sec2-article'>
-            <div id="about-me">
+            <div id="aboutMe">
               <div className="main-title">
                 <h1><span>ABOUT ME</span></h1>
               </div>
@@ -155,7 +188,7 @@ export default function MobileComponent () {
                 </div>
               </div>
             </div>
-            <div className="work-experience">
+            <div className="workExperience">
               <div className="work-experience-main-title">
                 <h2>#Work</h2>
               </div>
@@ -177,7 +210,7 @@ export default function MobileComponent () {
                 </ul>
               </div>
             </div>
-            <div id="skill-main-title">
+            <div id="skillMainTitle">
               <h1><span>SKILLS</span></h1>
             </div>
             <div className="skill-content">
@@ -270,7 +303,7 @@ export default function MobileComponent () {
               <h2>❗스킬 화면을 터치해 주세요!</h2>
             </div>         
             </div>
-            <div id="project-main-title">
+            <div id="projectMainTitle">
               <h1><span>PROJECT</span></h1>
             </div>
             <div className="project-content">

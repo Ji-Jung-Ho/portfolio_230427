@@ -4,12 +4,12 @@
     width: 100%;
     background:url(../../../../img/KakaoTalk_20230504_164306022.jpg) no-repeat 50% 50%;
     background-size: cover;
+    user-select: none;
     .container {
       width: 100%;
       padding: 20px;
       border-radius: 5px;
       background-color: #fff;
-      opacity: 0.9;
       .main-title {
         width: 100%;
         display: flex;
@@ -22,7 +22,7 @@
           margin-right: 10px;
         }
         h2 {
-          font-size: 26px;
+          font-size: 30px;
           font-weight: 700;
         }
       }
@@ -33,12 +33,12 @@
           width: 100%;
           border-bottom: 1px solid #000;
           h2 {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 700;
             padding: 10px 0;
           }
           p {
-            line-height: 180%;
+            line-height: 150%;
             font-size: 15px;
             font-weight: 700;
             strong {
@@ -64,7 +64,7 @@
           }
           ul {
             width: 100%;
-            line-height: 180%;
+            line-height: 150%;
             text-indent: -17px;
             padding-left: 15px;
             li {
@@ -77,15 +77,15 @@
           width: 100%;
           border-bottom: 1px solid #000;
           .development-main-title {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 700;
             padding: 10px 0;
           }
           .development-sub-title {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: 700;
             padding: 10px 0;
-            line-height: 180%;
+            line-height: 150%;
             span {
               background-color: #8dbdee;
               color: #000;
@@ -94,24 +94,30 @@
             }
           }
           p {
-            line-height: 180%;
+            line-height: 150%;
             font-size: 15px;
             padding-bottom: 5px;
             border-bottom: 1px solid #000;
+            span {
+              color: #72b2f3;
+              font-weight: 700;
+              text-decoration: underline;
+              text-underline-position: under;
+            }
           }
         }
         .experience {
           width: 100%;
           .experience-main-title {
-            font-size: 20px;
+            font-size: 25px;
             font-weight: 700;
             padding: 10px 0;
           }
           .experience-sub-title {
-            font-size: 15px;
+            font-size: 20px;
             font-weight: 700;
             padding: 10px 0;
-            line-height: 180%;
+            line-height: 150%;
             span {
               background-color: #8dbdee;
               color: #000;
@@ -120,7 +126,7 @@
             }
           }
           p {
-            line-height: 180%;
+            line-height: 150%;
             font-size: 15px;
             padding-bottom: 5px;
             border-bottom: 1px solid #000;

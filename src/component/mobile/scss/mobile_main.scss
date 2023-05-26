@@ -173,7 +173,7 @@
       overflow: hidden;
       padding: 40px 40px 0 40px;
       background-color: #FDF8F2;
-      #about-me {
+      #aboutMe {
         width: 100%;
         padding-bottom: 40px;
         border-bottom: 1px solid #000;
@@ -186,7 +186,7 @@
             text-align: center;
             border-radius: 5px;
             padding: 10px;
-            font-size: 26px;
+            font-size: 36px;
             font-weight: 700;
             span {
               border-bottom: 5px solid #000;
@@ -280,7 +280,7 @@
           }
         }
       }
-      .work-experience {
+      .workExperience {
         width: 100%;
         border-bottom: 1px solid #000;
         padding-bottom: 70px;
@@ -324,7 +324,7 @@
           }
         }
       }
-      #skill-main-title {
+      #skillMainTitle {
         width: 100%;
         padding-top: 20px;
         font-family: 'Black Han Sans';
@@ -332,8 +332,8 @@
           width: 100%;
           text-align: center;
           border-radius: 5px;
-          padding: 10px;
-          font-size: 26px;
+          padding: 10px 0 20px 0;
+          font-size: 36px;
           font-weight: 700;
           span {
             border-bottom: 5px solid #000;
@@ -414,7 +414,7 @@
         .skill-msg {
           position: absolute;
           top: 6px;
-          left: 15%;
+          left: 0%;
           h2 {
             font-size: 15px;
             font-weight: 700;
@@ -424,7 +424,7 @@
           }
         }
       }
-      #project-main-title {
+      #projectMainTitle {
         width: 100%;
         padding: 20px 0;
         font-family: 'Black Han Sans';
@@ -433,7 +433,7 @@
           text-align: center;
           border-radius: 5px;
           padding: 10px;
-          font-size: 26px;
+          font-size: 36px;
           font-weight: 700;
           span {
             border-bottom: 5px solid #000;
@@ -458,6 +458,8 @@
               font-size: 26px;
               font-weight: 700;
               text-align: center;
+              text-decoration: underline;
+              text-underline-offset: 10px;
             }
           }
           .project-info-01 {
@@ -483,8 +485,8 @@
                   width: 30px;
                   height: 30px;
                   position: absolute;
-                  top:60%;
-                  right:-10%;
+                  top:55%;
+                  right:-3%;
                   z-index: 2;
                   margin-top:-26px;
                 }
@@ -492,8 +494,8 @@
                   width: 30px;
                   height: 30px;
                   position: absolute;
-                  top:60%;
-                  left:-10%;
+                  top:55%;
+                  left:-3%;
                   z-index: 2;
                   margin-top:-26px;
                   transform: rotate(180deg);
@@ -543,7 +545,7 @@
               width: 100%;
               padding-top: 50px;
               > p {
-                font-size: 13px;
+                font-size: 15px;
                 padding-bottom: 10px;
                 line-height: 150%;
                 border-bottom: 2px solid #000;
@@ -578,7 +580,6 @@
                     width: 50%;
                     line-height: 150%;
                     font-weight: 900;
-                    font-size: 12px;
                     a {
                       color: rgb(242, 110, 110);
                       &:hover {
@@ -622,6 +623,8 @@
               font-size: 26px;
               font-weight: 700;
               text-align: center;
+              text-decoration: underline;
+              text-underline-offset: 10px;
             }
           }
           .project-info-02 {
@@ -645,8 +648,8 @@
                   width: 30px;
                   height: 30px;
                   position: absolute;
-                  top:60%;
-                  right:-10%;
+                  top:55%;
+                  right:-3%;
                   z-index: 2;
                   margin-top:-26px;
                 }
@@ -654,8 +657,8 @@
                   width: 30px;
                   height: 30px;
                   position: absolute;
-                  top:60%;
-                  left:-10%;
+                  top:55%;
+                  left:-3%;
                   z-index: 2;
                   margin-top:-26px;
                   transform: rotate(180deg);
@@ -705,7 +708,7 @@
               width: 100%;
               padding-top: 50px;
               > p {
-                font-size: 13px;
+                font-size: 15px;
                 padding-bottom: 10px;
                 line-height: 150%;
                 border-bottom: 2px solid #000;
@@ -740,7 +743,6 @@
                     width: 50%;
                     line-height: 150%;
                     font-weight: 900;
-                    font-size: 12px;
                     a {
                       color: rgb(242, 110, 110);
                       &:hover {
@@ -784,6 +786,8 @@
               font-size: 26px;
               font-weight: 700;
               text-align: center;
+              text-decoration: underline;
+              text-underline-offset: 10px;
             }
           }
           .project-info-03 {
@@ -791,13 +795,14 @@
             padding-bottom: 20px;
             > img {
               width: 100%;
+              height: 200px;
             }
             .info {
               display: flex;
               flex-direction: column;
               width: 100%;
               > p {
-                font-size: 13px;
+                font-size: 15px;
                 padding: 20px 0 10px 0;
                 line-height: 150%;
                 border-bottom: 2px solid #000;
@@ -826,7 +831,6 @@
                     width: 50%;
                     line-height: 150%;
                     font-weight: 900;
-                    font-size: 12px;
                     a {
                       color: rgb(242, 110, 110);
                       &:hover {

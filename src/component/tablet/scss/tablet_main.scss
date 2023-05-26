@@ -235,7 +235,7 @@
       overflow: hidden;
       padding: 40px 40px 0 40px;
       background-color: #FDF8F2;
-      #about-me {
+      #aboutMe {
         width: 100%;
         padding: 20px 0;
         border-bottom: 1px solid #000;
@@ -398,7 +398,7 @@
           }
         }
       }
-      #work-experience {
+      #workExperience {
         width: 100%;
         border-bottom: 1px solid #000;
         padding-bottom: 30px;
@@ -441,7 +441,7 @@
           }
         }
       }
-      #skill-main-title {
+      #skillMainTitle {
         width: 100%;
         padding-top: 20px;
         font-family: 'Black Han Sans';
@@ -457,7 +457,7 @@
           }
         }
       }
-      #skill-content {
+      .skill-content {
         width: 100%;
         position: relative;
         padding-top: 40px;
@@ -614,7 +614,7 @@
           }
         }
       }
-      #project-main-title {
+      #projectMainTitle {
         width: 100%;
         padding-top: 40px;
         font-family: 'Black Han Sans';
@@ -630,11 +630,11 @@
           }
         }
       }
-      #project-content {
+      .project-content {
         display: flex;
         flex-direction: column;
         padding-top: 50px;
-        #content-01 {
+        #content01 {
           width: 100%;
           padding: 20px;
           background-color: #fff;
@@ -730,7 +730,8 @@
               display: flex;
               flex-direction: column;
               width: 100%;
-              padding-top: 115px;
+              // padding-top: 115px;
+              padding-top: 10px;
               > p {
                 font-size: 25px;
                 padding-bottom: 20px;
@@ -793,7 +794,7 @@
             }
           }
         }
-        #content-02 {
+        #content02 {
           width: 100%;
           padding: 20px;
           background-color: #fff;
@@ -889,7 +890,7 @@
               flex-direction: column;
               // min-width: 330px;
               width: 100%;
-              padding-top: 115px;
+              padding-top: 10px;
               > p {
                 font-size: 25px;
                 padding-bottom: 20px;
@@ -952,7 +953,7 @@
             }
           }
         }
-        #content-03 {
+        #content03 {
           width: 100%;
           padding: 20px;
           background-color: #fff;

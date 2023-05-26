@@ -71,7 +71,7 @@ export default function TabletProject02Component () {
               <h2 className='development-sub-title'><span>Router를 사용하여 부드러운 페이지 전환 구현</span></h2>
               <p>
                 Router를 사용하여 header에서 각각의 페이지로 부드럽게 전환하도록 구현했습니다. 
-                useNavigate으로 회원가입 페이지에서 데이터 입력 후 '가입하기' 클릭 시 데이터 전송과 동시에 intro.main으로 
+                useNavigate으로 회원가입 페이지에서 데이터 입력 후 '가입하기' 클릭 시 데이터 전송과 동시에 MainComponent로
                 페이지가 전환되도록 구현했습니다.
               </p>
               <h2 className='development-sub-title'><span>회원가입 페이지 추가 기능 구현</span></h2>

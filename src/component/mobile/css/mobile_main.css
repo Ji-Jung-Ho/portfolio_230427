@@ -177,50 +177,50 @@
   padding: 40px 40px 0 40px;
   background-color: #FDF8F2;
 }
-#mobile-main #section2 .sec2-article #about-me {
+#mobile-main #section2 .sec2-article #aboutMe {
   width: 100%;
   padding-bottom: 40px;
   border-bottom: 1px solid #000;
 }
-#mobile-main #section2 .sec2-article #about-me .main-title {
+#mobile-main #section2 .sec2-article #aboutMe .main-title {
   width: 100%;
   padding-bottom: 20px;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article #about-me .main-title h1 {
+#mobile-main #section2 .sec2-article #aboutMe .main-title h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article #about-me .main-title h1 span {
+#mobile-main #section2 .sec2-article #aboutMe .main-title h1 span {
   border-bottom: 5px solid #000;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box {
   width: 100%;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box .row1 .my-info {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info img {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box .row1 .my-info img {
   width: 25px;
   margin-right: 10px;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .my-info h2 {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box .row1 .my-info h2 {
   font-weight: 600;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .detail {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box .row1 .detail {
   width: 100%;
 }
-#mobile-main #section2 .sec2-article #about-me .about-row-box .row1 .detail p {
+#mobile-main #section2 .sec2-article #aboutMe .about-row-box .row1 .detail p {
   margin-left: 35px;
 }
 #mobile-main #section2 .sec2-article .education {
@@ -278,64 +278,64 @@
   padding: 1px;
   border-radius: 3px;
 }
-#mobile-main #section2 .sec2-article .work-experience {
+#mobile-main #section2 .sec2-article .workExperience {
   width: 100%;
   border-bottom: 1px solid #000;
   padding-bottom: 70px;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-main-title {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-main-title {
   padding: 20px 0;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-main-title h2 {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-main-title h2 {
   font-size: 26px;
   font-weight: 700;
   text-decoration: underline;
   text-underline-offset: 7px;
   text-align: center;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content {
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content h1 {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content h1 {
   font-size: 15px;
   padding: 10px 0;
   font-weight: 700;
   line-height: 150%;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content h2 {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content h2 {
   font-size: 13px;
   padding: 10px 0;
   font-weight: 700;
   line-height: 150%;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content ul {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content ul {
   line-height: 150%;
   font-size: 13px;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content ul li {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content ul li {
   padding: 5px 0;
 }
-#mobile-main #section2 .sec2-article .work-experience .work-experience-content ul li > h2 {
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content ul li > h2 {
   font-size: 50px;
 }
-#mobile-main #section2 .sec2-article #skill-main-title {
+#mobile-main #section2 .sec2-article #skillMainTitle {
   width: 100%;
   padding-top: 20px;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article #skill-main-title h1 {
+#mobile-main #section2 .sec2-article #skillMainTitle h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
-  padding: 10px;
-  font-size: 26px;
+  padding: 10px 0 20px 0;
+  font-size: 36px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article #skill-main-title h1 span {
+#mobile-main #section2 .sec2-article #skillMainTitle h1 span {
   border-bottom: 5px solid #000;
 }
 #mobile-main #section2 .sec2-article .skill-content {
@@ -415,7 +415,7 @@
 #mobile-main #section2 .sec2-article .skill-content .skill-msg {
   position: absolute;
   top: 6px;
-  left: 15%;
+  left: 0%;
 }
 #mobile-main #section2 .sec2-article .skill-content .skill-msg h2 {
   font-size: 15px;
@@ -423,20 +423,20 @@
   padding: 5px;
   border-radius: 15px;
 }
-#mobile-main #section2 .sec2-article #project-main-title {
+#mobile-main #section2 .sec2-article #projectMainTitle {
   width: 100%;
   padding: 20px 0;
   font-family: "Black Han Sans";
 }
-#mobile-main #section2 .sec2-article #project-main-title h1 {
+#mobile-main #section2 .sec2-article #projectMainTitle h1 {
   width: 100%;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article #project-main-title h1 span {
+#mobile-main #section2 .sec2-article #projectMainTitle h1 span {
   border-bottom: 5px solid #000;
 }
 #mobile-main #section2 .sec2-article .project-content {
@@ -460,6 +460,8 @@
   font-size: 26px;
   font-weight: 700;
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-01 .project-info-01 {
   width: 100%;
@@ -485,8 +487,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 60%;
-  right: -10%;
+  top: 55%;
+  right: -3%;
   z-index: 2;
   margin-top: -26px;
 }
@@ -494,8 +496,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 60%;
-  left: -10%;
+  top: 55%;
+  left: -3%;
   z-index: 2;
   margin-top: -26px;
   transform: rotate(180deg);
@@ -543,7 +545,7 @@
   padding-top: 50px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info > p {
-  font-size: 13px;
+  font-size: 15px;
   padding-bottom: 10px;
   line-height: 150%;
   border-bottom: 2px solid #000;
@@ -580,7 +582,6 @@
   width: 50%;
   line-height: 150%;
   font-weight: 900;
-  font-size: 12px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-01 .project-info-01 .info .development-info .detail .right-p a {
   color: rgb(242, 110, 110);
@@ -621,6 +622,8 @@
   font-size: 26px;
   font-weight: 700;
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-02 .project-info-02 {
   width: 100%;
@@ -646,8 +649,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 60%;
-  right: -10%;
+  top: 55%;
+  right: -3%;
   z-index: 2;
   margin-top: -26px;
 }
@@ -655,8 +658,8 @@
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 60%;
-  left: -10%;
+  top: 55%;
+  left: -3%;
   z-index: 2;
   margin-top: -26px;
   transform: rotate(180deg);
@@ -704,7 +707,7 @@
   padding-top: 50px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info > p {
-  font-size: 13px;
+  font-size: 15px;
   padding-bottom: 10px;
   line-height: 150%;
   border-bottom: 2px solid #000;
@@ -741,7 +744,6 @@
   width: 50%;
   line-height: 150%;
   font-weight: 900;
-  font-size: 12px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-02 .project-info-02 .info .development-info .detail .right-p a {
   color: rgb(242, 110, 110);
@@ -782,6 +784,8 @@
   font-size: 26px;
   font-weight: 700;
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-03 .project-info-03 {
   width: 100%;
@@ -789,6 +793,7 @@
 }
 #mobile-main #section2 .sec2-article .project-content .content-03 .project-info-03 > img {
   width: 100%;
+  height: 200px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-03 .project-info-03 .info {
   display: flex;
@@ -796,7 +801,7 @@
   width: 100%;
 }
 #mobile-main #section2 .sec2-article .project-content .content-03 .project-info-03 .info > p {
-  font-size: 13px;
+  font-size: 15px;
   padding: 20px 0 10px 0;
   line-height: 150%;
   border-bottom: 2px solid #000;
@@ -827,7 +832,6 @@
   width: 50%;
   line-height: 150%;
   font-weight: 900;
-  font-size: 12px;
 }
 #mobile-main #section2 .sec2-article .project-content .content-03 .project-info-03 .info .development-info .detail .right-p a {
   color: rgb(242, 110, 110);
