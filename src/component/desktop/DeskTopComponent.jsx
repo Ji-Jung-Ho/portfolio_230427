@@ -431,7 +431,8 @@ export default function DeskTopComponent () {
                     <button className="project-01-prev-btn">
                       <img src="./img/swiper-nav-btn.png" alt="" />
                     </button>
-                    <div className="swiper-pagination-01"></div>
+                    <div className="swiper-pagination-01">
+                    </div>
                   </div>
                   <div className="info">
                     <p>마켓컬리 홈페이지 클론 코딩입니다. <span>Node서버 기반으로 HTML, CSS, JavaScript, jQuery를 사용하여 개발</span>하였으며, 스터디를 구성하여 팀 프로젝트로 마켓컬리의 상품페이지와 회원가입 페이지를 구현했습니다.</p>

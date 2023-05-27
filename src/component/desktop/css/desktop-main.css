@@ -697,7 +697,7 @@
   width: 52px;
   height: 52px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -4%;
   z-index: 2;
   margin-top: -26px;
@@ -706,7 +706,7 @@
   width: 52px;
   height: 52px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: -3%;
   z-index: 2;
   margin-top: -26px;
@@ -721,18 +721,16 @@
 }
 #desktop-main #section2 .sec2-article .project-content #content01 .project-info-01 .swiper-container .swiper-slide img {
   width: 100%;
-  height: 572px;
+  height: 450px;
 }
 #desktop-main #section2 .sec2-article .project-content #content01 .project-info-01 .swiper-container .swiper-pagination-01 {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 100%;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 #desktop-main #section2 .sec2-article .project-content #content01 .project-info-01 .swiper-container .swiper-pagination-01 .custom_bullet {
-  width: 78px;
-  height: 78px;
+  width: 74px;
+  height: 74px;
   opacity: 0.5;
   border: 0;
   background-color: #fff;
@@ -745,8 +743,8 @@
 }
 #desktop-main #section2 .sec2-article .project-content #content01 .project-info-01 .swiper-container .swiper-pagination-01 img {
   border-radius: 3px;
-  width: 74px;
-  height: 74px;
+  width: 70px;
+  height: 70px;
 }
 #desktop-main #section2 .sec2-article .project-content #content01 .project-info-01 .info {
   display: flex;
@@ -862,7 +860,7 @@
   width: 52px;
   height: 52px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   right: -4%;
   z-index: 2;
   margin-top: -26px;
@@ -871,7 +869,7 @@
   width: 52px;
   height: 52px;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: -3%;
   z-index: 2;
   margin-top: -26px;
@@ -886,18 +884,16 @@
 }
 #desktop-main #section2 .sec2-article .project-content #content02 .project-info-02 .swiper-container .swiper-slide img {
   width: 100%;
-  height: 572px;
+  height: 450px;
 }
 #desktop-main #section2 .sec2-article .project-content #content02 .project-info-02 .swiper-container .swiper-pagination-02 {
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  top: 100%;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 #desktop-main #section2 .sec2-article .project-content #content02 .project-info-02 .swiper-container .swiper-pagination-02 .custom_bullet {
-  width: 78px;
-  height: 78px;
+  width: 74px;
+  height: 74px;
   opacity: 0.5;
   border: 0;
   background-color: #fff;
@@ -910,8 +906,8 @@
 }
 #desktop-main #section2 .sec2-article .project-content #content02 .project-info-02 .swiper-container .swiper-pagination-02 img {
   border-radius: 3px;
-  width: 74px;
-  height: 74px;
+  width: 70px;
+  height: 70px;
 }
 #desktop-main #section2 .sec2-article .project-content #content02 .project-info-02 .info {
   display: flex;
