@@ -290,20 +290,20 @@ export default function TabletComponent () {
                 <h2>#Work</h2>
               </div>
               <div className="work-experience-content">
-                <h1>카카오게임즈 - 모바일 운영팀 (2020.06.23 ~ 2022.06.21)</h1>
-                <h2>- 게임에 대한 유저의 니즈를 파악하여 더 나은 환경에서 게임을 할 수 있도록 서비스를 제공</h2>
+                <h1>카카오게임즈 - 모바일 운영팀</h1>
+                <h2>(2020.06.23 ~ 2022.06.21)</h2>
+                <h3>가디언테일즈 & 오딘  & 우마무스메 서비스 런칭 경험</h3>
                 <ul> 
-                  <li>원활한 게임 환경을 제공하기 위해 유저 동향 실시간 모니터링</li>
-                  <li>일일 데이터 관리 및 유저 관리</li>
-                  <li>장애, 점검 히스토리 기록 및 게임 이슈 상황 수집</li>
-                  <li>민감한 동향, 이슈사항을 수집하여 그래프로 시각화</li>
-                  <li>불법 프로그램 사용자 제제 및 공식카페 악성 댓글 유저 제제</li>
-                  <li>아이템 및 골드 현거래 일일 거래량 조사</li>
-                  <li>이벤트 체크리스트 작성 및 기록</li>
-                  <li>정상적인 게임 점검 확인 및 내·외부망에서의 게임 접속 확인</li>
-                  <li>클린한 공식카페를 위한 불건전 게시글, 광고성 게시글, 댓글 삭제</li>
-                  <li>이벤트 및 점검 공지사항 작성</li>
-                  <li>공식 카페 활성화를 위한 게시글 댓글 기획안 작성</li>
+                  <li>- 원활한 게임 진행을 위한 게임 환경 및 서비스 제공</li>
+                  <li>- 유저 동향 파악을 위한 모니터링</li>
+                  <li>- 일일 데이터 관리 및 유저 관리</li>
+                  <li>- 장애, 점검 히스토리 기록 및 게임 이슈 상황 수집</li>
+                  <li>- 커뮤니티(공식카페, 디시인사이드 등) 유저 동향 수집</li>
+                  <li>- 불법 프로그램 사용 유저 제제 및 공식카페 불건전 게시글, 댓글 삭제</li>
+                  <li>- 이벤트 체크리스트 작성</li>
+                  <li>- 정상적인 게임 점검 확인 및 내·외부망, 디바이스별 게임 접속 확인</li>
+                  <li>- 이벤트 및 점검 공지사항 작성</li>
+                  <li>- 공식 카페 활성화를 위한 게시글 댓글 기획안 작성</li>
                 </ul>
               </div>
             </div>
@@ -316,31 +316,32 @@ export default function TabletComponent () {
                   <p className='content-title'>Frontend</p>
                   <img src="./img/frontend.png" className='frontend-img' alt="frontend-skills-img" />
                   <div className="click-ui-container">
-                    <div className="click-ui-content">
-                      <div className="detail-box">
-                       <h2>HTML5, CSS3, JS(ES6)</h2>
-                        <ul>
-                        <li>- HTML 시맨틱 태그 지키기 가능</li>
-                        <li>- CSS의 유형별 선언 및 사용</li>
-                        <li>- Flex속성 활용 가능</li>
-                        <li>- JavaScript, jQuery를 활용하여 동적인 웹 페이지 구축 가능</li>
-                        <li>- jQuery를 활용하여 이벤트 구현 가능</li>
-                        <li>- Ajax를 이용하여 비동기 방식으로 웹 페이지 구축 가능</li>
-                        </ul>
-                      </div>
-                      <div className="detail-box">
-                        <h2>React</h2>
-                        <ul>
-                        <li>- 리액트 개발환경 설정과 Virtual DOM 개념 이해</li>
-                        <li>- JSX, TSX 사용과 함수형 컴포넌트 작성 가능</li>
-                        <li>- TypeScript를 사용하여 변수 타입 명시 가능</li>
-                        <li>- state, props 개념 및 데이터의 흐름 이해</li>
-                        <li>- Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험</li>
-                        <li>- Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능</li>
-                        <li>- React-router-dom을 사용한 페이지 이동 구현</li>
-                        </ul>
-                      </div>
+                  <div className="click-ui-content">
+                    <h2>HTML5, CSS3, JS(ES6)</h2>
+                    <div className="detail-box">
+                      <ul>
+                        <li>- HTML 시멘틱 마크업 가능 </li>
+                        <li>- meta태그 활용으로 SEO 최적화 가능 </li>
+                        <li>- CSS의 유형별 선언 및 사용 </li>
+                        <li>- Flex속성 활용 가능 </li>
+                        <li>- JavaScript, jQuery를 활용하여 동적인 웹 페이지 구축 가능 </li>
+                        <li>- jQuery를 활용하여 이벤트 구현 가능 </li>
+                        <li>- Ajax를 이용하여 비동기 방식으로 웹 페이지 구축 가능 </li>
+                      </ul>
                     </div>
+                    <h2>React</h2>
+                      <div className="detail-box">
+                        <ul>
+                          <li>- 리액트 개발환경 설정과 Virtual DOM 개념 이해</li>
+                          <li>- JSX, TSX 사용과 함수형 컴포넌트 작성 가능</li>
+                          <li>- TypeScript를 사용하여 변수 타입 명시 가능</li>
+                          <li>- state, props 개념 및 데이터의 흐름 이해</li>
+                          <li>- Axios를 활용하여 비동기 통신이 가능한 웹페이지 구현 경험</li>
+                          <li>- Hook을 사용하여 React.state, useEffect 등 생명주기 연동 가능</li>
+                          <li>- React-router-dom을 사용한 페이지이동 구현</li>
+                        </ul>
+                      </div>
+                  </div>
                   </div>
                 </div>   
               </div>
@@ -456,11 +457,11 @@ export default function TabletComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;javascript,&nbsp;jQuery</p>
+                        <p className='right-p'>HTML, CSS, javascript, jQuery</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>
-                        <p className='right-p'>PHP,&nbsp;Node.js</p>
+                        <p className='right-p'>PHP, Node.js</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>DB :</p>
@@ -535,11 +536,11 @@ export default function TabletComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;javascript,&nbsp;jQuery&nbsp;React</p>
+                        <p className='right-p'>HTML, CSS, javascript, jQuery React</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>
-                        <p className='right-p'>PHP,&nbsp;Node.js</p>
+                        <p className='right-p'>PHP, Node.js</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>DB :</p>
@@ -572,7 +573,7 @@ export default function TabletComponent () {
                 <div className="project-info-03">
                   <img src="./img/mypage.png" alt="" />
                   <div className="info">
-                    <p>React를 사용한 포트폴리오 홈페이지 입니다. 저에 대한 간단한 설명과 보유스킬 및 지금까지 진행했던 포트폴리오를 소개하는 홈페이지 입니다.</p>
+                    <p>React를 사용하여 제작한 개인 웹 포트폴리오 입니다. 모바일과 PC, 태블릿에서 볼 수 있게 최대한 반응형을 고려하여 작업하였습니다.</p>
                     <div className="development-info">
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>개발 기간 :</p>
@@ -584,7 +585,7 @@ export default function TabletComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Frontend :</p>
-                        <p className='right-p'>HTML,&nbsp;CSS,&nbsp;Javascript,&nbsp;React</p>
+                        <p className='right-p'>HTML, CSS, Javascript, React</p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>Backend :</p>

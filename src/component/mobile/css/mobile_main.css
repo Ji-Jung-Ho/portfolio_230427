@@ -113,9 +113,11 @@
   position: relative;
   z-index: 2;
   font-size: 16px;
+  text-indent: -10px;
+  padding-left: 10px;
 }
 #mobile-main #section1 .sec1-article .main-title h2.info {
-  font-size: 16px;
+  font-size: 26px;
 }
 #mobile-main #section1 .sec1-article .main-title .info-subtitle {
   display: flex;
@@ -267,10 +269,14 @@
   padding: 10px 0;
   font-weight: 700;
 }
-#mobile-main #section2 .sec2-article .education .education-content .education-academy ul li {
-  font-size: 13px;
-  margin: 10px 0;
+#mobile-main #section2 .sec2-article .education .education-content .education-academy ul {
   line-height: 150%;
+  font-size: 13px;
+}
+#mobile-main #section2 .sec2-article .education .education-content .education-academy ul li {
+  text-indent: -8px;
+  padding-left: 8px;
+  margin: 10px 0;
 }
 #mobile-main #section2 .sec2-article .education .education-content .education-academy ul li span {
   background-color: #8dbdee;
@@ -302,22 +308,26 @@
 }
 #mobile-main #section2 .sec2-article .workExperience .work-experience-content h1 {
   font-size: 15px;
-  padding: 10px 0;
   font-weight: 700;
   line-height: 150%;
 }
 #mobile-main #section2 .sec2-article .workExperience .work-experience-content h2 {
   font-size: 13px;
+  font-weight: 700;
+}
+#mobile-main #section2 .sec2-article .workExperience .work-experience-content h3 {
+  font-size: 13px;
   padding: 10px 0;
   font-weight: 700;
-  line-height: 150%;
 }
 #mobile-main #section2 .sec2-article .workExperience .work-experience-content ul {
   line-height: 150%;
   font-size: 13px;
 }
 #mobile-main #section2 .sec2-article .workExperience .work-experience-content ul li {
-  padding: 5px 0;
+  margin: 5px 0;
+  text-indent: -8px;
+  padding-left: 8px;
 }
 #mobile-main #section2 .sec2-article .workExperience .work-experience-content ul li > h2 {
   font-size: 50px;

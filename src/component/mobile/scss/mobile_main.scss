@@ -109,8 +109,10 @@
         position: relative;
         z-index: 2;
         font-size: 16px;
+        text-indent: -10px;
+        padding-left: 10px;
         h2.info {
-          font-size: 16px;
+          font-size: 26px;
         }
         .info-subtitle {
           display: flex;
@@ -265,10 +267,12 @@
               font-weight: 700;
             }
             ul {
+              line-height: 150%;
+              font-size: 13px;
               li {
-                font-size: 13px;
+                text-indent: -8px;
+                padding-left: 8px;
                 margin: 10px 0;
-                line-height: 150%;
                 span {
                   background-color: #8dbdee;
                   color: #000;
@@ -300,23 +304,27 @@
           padding: 20px;
           box-shadow: 0 6px 18px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
           background-color: #fff;
-          h1 {
+           h1 {
             font-size: 15px;
-            padding: 10px 0;
             font-weight: 700;
             line-height: 150%;
           }
           h2 {
             font-size: 13px;
+            font-weight: 700;
+          }
+          h3 {
+            font-size: 13px;
             padding: 10px 0;
             font-weight: 700;
-            line-height: 150%;
           }
           ul {
             line-height: 150%;
             font-size: 13px;
             li {
-              padding: 5px 0;
+              margin: 5px 0;
+              text-indent: -8px;
+              padding-left: 8px;
               > h2 {
                 font-size: 50px;
               }

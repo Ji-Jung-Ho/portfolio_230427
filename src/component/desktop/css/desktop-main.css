@@ -514,21 +514,24 @@
 }
 #desktop-main #section2 .sec2-article #workExperience .work-experience-content h1 {
   font-size: 30px;
-  padding: 20px 0 0 0;
-  font-weight: 600;
+  font-weight: 700;
+  line-height: 150%;
 }
 #desktop-main #section2 .sec2-article #workExperience .work-experience-content h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+#desktop-main #section2 .sec2-article #workExperience .work-experience-content h3 {
   font-size: 25px;
-  padding: 30px 0;
-  font-weight: 600;
+  padding: 20px 0;
+  font-weight: 700;
 }
 #desktop-main #section2 .sec2-article #workExperience .work-experience-content ul {
-  padding-left: 30px;
+  line-height: 150%;
+  font-size: 20px;
 }
 #desktop-main #section2 .sec2-article #workExperience .work-experience-content ul li {
-  padding: 10px 0;
-  font-size: 20px;
-  list-style: disc;
+  margin: 10px 0;
 }
 #desktop-main #section2 .sec2-article #workExperience .work-experience-content ul li > h2 {
   font-size: 50px;
@@ -614,9 +617,13 @@
   padding: 0 10px;
   line-height: 200%;
 }
-#desktop-main #section2 .sec2-article .skill-content .content-box .click-ui-container .click-ui-content .detail-box p {
+#desktop-main #section2 .sec2-article .skill-content .content-box .click-ui-container .click-ui-content .detail-box ul {
   color: #ccc;
   font-size: 15px;
+}
+#desktop-main #section2 .sec2-article .skill-content .content-box .click-ui-container .click-ui-content .detail-box ul li {
+  text-indent: -11px;
+  padding-left: 11px;
 }
 #desktop-main #section2 .sec2-article .skill-content .skill-msg {
   position: absolute;
