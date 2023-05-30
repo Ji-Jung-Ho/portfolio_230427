@@ -30,7 +30,7 @@ export default function DesktopProject02Component () {
         <div className="container">
           <div className="back-btn">
             <button type='button' className={scroll >= 99 ? "on" : ""} onClick={onClickBackBtn}>
-              <img src={scroll <= 99 ? img2 : img1} alt=""/>
+              <img src={scroll <= 99 ? img2 : img1} alt="back-btn-img"/>
             </button>
           </div>
         </div>
@@ -39,7 +39,7 @@ export default function DesktopProject02Component () {
       <div className="project02-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/kurly_logo.png" alt="kurly-logo-img" />
             <h2><strong>마켓컬리</strong> 클론코딩 (개인)</h2>
           </div>
           <div className="project-content">

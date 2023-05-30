@@ -33,7 +33,7 @@ export default function MobileProject03 () {
       <div className="project03-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/sun.png" alt="portfolio-logo-img" />
             <h2>나만의 포트폴리오</h2>
           </div>
           <div className="project-content">
@@ -85,11 +85,11 @@ export default function MobileProject03 () {
           </div>
           <div className="btn-box">
             <button className='back-btn' onClick={onClickBackBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="back-btn-img" />
               <h2>뒤로가기</h2>
             </button>
             <button className='up-btn' onClick={onClickUpBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="up-btn-img" />
               <h2>맨위이동</h2>
             </button>
           </div>

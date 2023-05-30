@@ -86,7 +86,7 @@ export default function DeskTopComponent () {
                 </ul>
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
-                  <li><a href="https://github.com/Ji-Jung-Ho" target="_blank">github.com/Ji-Jung-Ho</a></li>
+                  <li><a href="https://github.com/Ji-Jung-Ho" target="_blank" rel='noopener noreferrer'>github.com/Ji-Jung-Ho</a></li>
                   <li><p>Last Update : 2023-05-30</p></li>
                 </ul>
               </nav>
@@ -94,7 +94,7 @@ export default function DeskTopComponent () {
           </Fade>
             <article className="sec1-article">
               <div className="img-box">
-                <img src="./img/jungho_bgimg.jpg" alt="" />
+                <img src="./img/jungho_bgimg.jpg" alt="jungho-background-img" />
               </div>
               <div className="main-title">
                   <Fade top duration={2000} delay={1000}>
@@ -114,7 +114,7 @@ export default function DeskTopComponent () {
                   </Fade>
               </div>
               <div className="down-arrow">
-                <img src="./img/56747.png" alt="" />
+                <img src="./img/56747.png" alt="down-img" />
               </div>
             </article>
         </section>
@@ -232,7 +232,7 @@ export default function DeskTopComponent () {
                   </div>
                   <div className="row1-center">
                     <div className="birth">
-                      <img src="./img/birth.png" alt="name" />
+                      <img src="./img/birth.png" alt="birth" />
                       <h2>생년월일</h2>
                     </div>
                     <div className="detail">
@@ -241,7 +241,7 @@ export default function DeskTopComponent () {
                   </div>
                   <div className="row1-right">
                   <div className="phone-number">
-                      <img src="./img/phone-number.png" alt="name" />
+                      <img src="./img/phone-number.png" alt="phone-img" />
                       <h2>전화번호</h2>
                     </div>
                     <div className="detail">
@@ -336,7 +336,7 @@ export default function DeskTopComponent () {
               </div>            
               <div className={backendTextui ? "content-box backend on" : "content-box backend"} onClick={onClickToggleBackend}>
                 <p className='content-title'>Backend</p>
-                <img src="./img/backend.png" alt="" />
+                <img src="./img/backend.png" alt="backend-skills-img" />
                 <div className="click-ui-container">
                   <div className="click-ui-content">
                     <h2>PHP</h2>
@@ -427,10 +427,10 @@ export default function DeskTopComponent () {
                       <SwiperSlide><img src="./img/project01-img/kurly_jquery_preview_6.png" alt="kurly_jQuery_img6" /></SwiperSlide>
                     </Swiper>
                     <button className="project-01-next-btn">
-                      <img src="./img/swiper-nav-btn.png" alt="" />
+                      <img src="./img/swiper-nav-btn.png" alt="next-btn-img" />
                     </button>
                     <button className="project-01-prev-btn">
-                      <img src="./img/swiper-nav-btn.png" alt="" />
+                      <img src="./img/swiper-nav-btn.png" alt="prev-btn-img" />
                     </button>
                     <div className="swiper-pagination-01">
                     </div>
@@ -514,10 +514,10 @@ export default function DeskTopComponent () {
                       <SwiperSlide><img src="./img/project02-img/kurly_react_preview_6.png" alt="kurly_react_img6" /></SwiperSlide>
                     </Swiper>
                     <button className="project-02-next-btn">
-                      <img src="./img/swiper-nav-btn.png" alt="" />
+                      <img src="./img/swiper-nav-btn.png" alt="next-btn-img" />
                     </button>
                     <button className="project-02-prev-btn">
-                      <img src="./img/swiper-nav-btn.png" alt="" />
+                      <img src="./img/swiper-nav-btn.png" alt="prev-btn-img" />
                     </button>
                     <div className="swiper-pagination-02"></div>
                   </div>
@@ -571,7 +571,7 @@ export default function DeskTopComponent () {
                   <h2>My Portfolio</h2>
                 </div>
                 <div className="project-info-03">
-                  <img src="./img/mypage.png" alt="" />
+                  <img src="./img/mypage.png" alt="portfolio-web-img" />
                   <div className="info">
                     <p>React를 사용하여 제작한 개인 웹 포트폴리오 입니다. 모바일과 PC, 태블릿에서 볼 수 있게 최대한 반응형을 고려하여 작업하였습니다.</p>
                     <div className="development-info">

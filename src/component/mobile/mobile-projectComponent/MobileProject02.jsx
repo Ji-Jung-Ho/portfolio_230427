@@ -33,7 +33,7 @@ export default function MobileProject02 () {
       <div className="project02-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/kurly_logo.png" alt="kurly-logo-img" />
             <h2><strong>마켓컬리</strong> 클론코딩 <span>(개인)</span></h2>
           </div>
           <div className="project-content">
@@ -96,11 +96,11 @@ export default function MobileProject02 () {
           </div>
           <div className="btn-box">
             <button className='back-btn' onClick={onClickBackBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="back-btn-img" />
               <h2>뒤로가기</h2>
             </button>
             <button className='up-btn' onClick={onClickUpBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="up-btn-img" />
               <h2>맨위이동</h2>
             </button>
           </div>

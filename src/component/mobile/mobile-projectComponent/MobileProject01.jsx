@@ -33,7 +33,7 @@ export default function Mobilemobile_project01 () {
       <div className="project01-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/kurly_logo.png" alt="kurly-logo-img" />
             <h2><strong>마켓컬리</strong> 클론코딩 (팀)</h2>
           </div>
           <div className="project-content">
@@ -50,11 +50,11 @@ export default function Mobilemobile_project01 () {
             <div className="development-part">
               <h2>❗프로젝트에서 맡은 부분</h2>
               <ul>
-                <li><img src="./img/circle.png" alt="" /><span>베스트 페이지</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>특가/혜택 페이지</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>modal 구현</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>header 구현</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>회원가입 주소, 이용약관동의 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>베스트 페이지</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>특가/혜택 페이지</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>modal 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>header 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>회원가입 주소, 이용약관동의 구현</span></li>
               </ul>
               <br />
               <ul>
@@ -88,11 +88,11 @@ export default function Mobilemobile_project01 () {
           </div>
           <div className="btn-box">
             <button className='back-btn' onClick={onClickBackBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="back-btn-img" />
               <h2>뒤로가기</h2>
             </button>
             <button className='up-btn' onClick={onClickUpBtn}>
-              <img src="./img/back_btn_on.png" alt="" />
+              <img src="./img/back_btn_on.png" alt="up-btn-img" />
               <h2>맨위이동</h2>
             </button>
           </div>

@@ -26,7 +26,7 @@ export default function TabletProject03Component () {
         <div className="container">
           <div className="back-btn">
             <button type='button' className={scroll >= 99 ? "on" : ""} onClick={onClickBtn}>
-              <img src={img2} alt=""/>
+              <img src={img2} alt="back-btn-img"/>
             </button>
           </div>
           <div className="banner-img-box"></div>
@@ -35,7 +35,7 @@ export default function TabletProject03Component () {
       <div className="project03-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/sun.png" alt="portfolio-logo-img" />
             <h2>나의 포트폴리오</h2>
           </div>
           <div className="project-content">

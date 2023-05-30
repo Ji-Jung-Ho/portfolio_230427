@@ -26,7 +26,7 @@ export default function TabletProject01Component () {
         <div className="container">
           <div className="btn-box">
             <button className='back-btn' onClick={onClickBtn}>
-              <img src={img1} alt=""/>
+              <img src={img1} alt="back-btn-img"/>
             </button>
           </div>
           <div className="banner-img-box"></div>
@@ -35,7 +35,7 @@ export default function TabletProject01Component () {
       <div className="project01-main">
         <div className="container">
           <div className="main-title">
-            <img src="./img/kurly_logo.png" alt="" />
+            <img src="./img/kurly_logo.png" alt="kurly-logo-img" />
             <h2><strong>마켓컬리</strong> 클론코딩 (팀)</h2>
           </div>
           <div className="project-content">
@@ -52,11 +52,11 @@ export default function TabletProject01Component () {
             <div className="development-part">
               <h2 className='development-main-title'>❗프로젝트에서 맡은 부분</h2>
               <ul>
-                <li><img src="./img/circle.png" alt="" /><span>베스트 페이지</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>특가/혜택 페이지</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>modal 구현</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>header 구현</span></li>
-                <li><img src="./img/circle.png" alt="" /><span>회원가입 주소, 이용약관동의 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>베스트 페이지</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>특가/혜택 페이지</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>modal 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>header 구현</span></li>
+                <li><img src="./img/circle.png" alt="circle-img" /><span>회원가입 주소, 이용약관동의 구현</span></li>
               </ul>
               <br />
               <ul>
