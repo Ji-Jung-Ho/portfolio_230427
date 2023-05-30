@@ -43,7 +43,7 @@ export default function DesktopProject03Component () {
           <div className="project-content">
             <div className="project-info">
               <h2>❗프로젝트 설명</h2>
-              <p className='project-info-main-title'>저에 대한 간단한 소개와 기술 스택, 개발한 Project를 소개하는 홈페이지 입니다. 다양한 라이브러리를 사용하여 기능을 구현했습니다.<br /></p>
+              <p className='project-info-main-title'>React를 사용하여 제작한 반응형 포트폴리오 입니다. 다양한 라이브러리를 사용하여 기능을 구현했습니다.<br /></p>
               <p className='project-info-sub-title'>포트폴리오 웹페이지에서 구현한 핵심 기능은 <span>3가지</span>입니다.</p>
               <ul>
                 <li>1. React-reveal을 사용한 Fade, Flip 구현</li>

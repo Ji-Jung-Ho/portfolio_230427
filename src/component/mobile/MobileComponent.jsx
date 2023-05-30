@@ -104,7 +104,7 @@ export default function MobileComponent () {
                 <ul className='github-email'>
                   <li><a href="mailto:kiik52.naver.com">kiik52.naver.com</a></li>
                   <li><a href="https://github.com/Ji-Jung-Ho" target="_blank">github.com/Ji-Jung-Ho</a></li>
-                  <li><p>Last Update : 2023-05-25</p></li>
+                  <li><p>Last Update : 2023-05-30</p></li>
                 </ul>
               </nav>
             </aside>

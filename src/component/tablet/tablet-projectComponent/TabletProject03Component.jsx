@@ -41,7 +41,7 @@ export default function TabletProject03Component () {
           <div className="project-content">
             <div className="project-info">
               <h2>❗프로젝트 설명</h2>
-              <p className='project-info-main-title'>저에 대한 간단한 소개와 기술 스택, 개발한 Project를 소개하는 홈페이지 입니다. 다양한 라이브러리를 사용하여 기능을 구현했습니다.<br /></p>
+              <p className='project-info-main-title'>React를 사용하여 제작한 반응형 포트폴리오 입니다. 다양한 라이브러리를 사용하여 기능을 구현했습니다.<br /></p>
               <p className='project-info-sub-title'>포트폴리오 웹페이지에서 구현한 핵심 기능은 <span>3가지</span>입니다.</p>
               <ul>
                 <li>1. React-reveal을 사용한 애니메이션 구현</li>
@@ -79,7 +79,7 @@ export default function TabletProject03Component () {
               <h2 className='experience-main-title'>❗성장 경험</h2>
               <h2 className='experience-sub-title'><span>다양한 JavaScript 라이브러리의 사용</span></h2>
               <p>
-              처음에 계획했던 포트폴리오 프로젝트에서 많은 참고 자료를 통해 지금의 웹페이지가 탄생했습니다. 라이브러리에 대한 개념과 사용 방법에 대해 잘 알지 못했지만, 이번 프로젝트를
+                처음에 계획했던 포트폴리오 프로젝트에서 많은 참고 자료를 통해 지금의 웹페이지가 탄생했습니다. 라이브러리에 대한 개념과 사용 방법에 대해 잘 알지 못했지만, 이번 프로젝트를
                 계기로 다양한 라이브러리의 사용법을 알게되었습니다. 처음 사용하는 라이브러리에 대해 많은 부분을 검색하고 사용해보고 오류도 수정하면서 프로젝트를 제작했습니다.
                 완성된 프로젝트를 깃허브를 통해 배포 한 뒤 프로젝트를 보았을때 한정된 디바이스 환경에서만 볼 수 있다는 문제를 감지하여 react-responsive를 통해 반응형 웹페이지로 재구성 했습니다.
               </p>

@@ -182,6 +182,7 @@
 #tablet-main #section2 .sec2-aside .menu-bar {
   display: flex;
   height: 100%;
+  cursor: pointer;
 }
 #tablet-main #section2 .sec2-aside .menu-bar .nav-main-title {
   width: 100%;
@@ -723,11 +724,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 115px;
 }
 #tablet-main #section2 .sec2-article .project-content #content01 .project-info-01 .info > p {
   font-size: 30px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   line-height: 150%;
   border-bottom: 2px solid #000;
 }
@@ -881,11 +881,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 115px;
 }
 #tablet-main #section2 .sec2-article .project-content #content02 .project-info-02 .info > p {
   font-size: 30px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   line-height: 150%;
   border-bottom: 2px solid #000;
 }

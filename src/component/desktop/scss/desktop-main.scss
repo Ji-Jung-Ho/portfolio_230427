@@ -188,6 +188,7 @@
       .menu-bar {
         display: flex;
         height: 100%;
+        cursor: pointer;
         .nav-main-title{
           width: 100%;
           display: flex;
@@ -200,7 +201,7 @@
             text-align: center;
             padding: 30px 0;
             a {
-              font-size: 30px;
+              font-size: 40px;
               color: #fff;
               font-weight: 700;
               transition: all 0.1s;
@@ -601,6 +602,7 @@
             margin: 20px 0 0 0;
             width: 100%;
             height: 500px;
+            border-radius: 20px;
           }
           .click-ui-container {
             opacity: 0;
@@ -741,8 +743,6 @@
               .swiper-pagination-01 {
                 display: flex;
                 justify-content: space-between;
-                // position: absolute;
-                // top: 80%;
                 padding-top: 25px;
                 .custom_bullet {
                   width: 74px;
@@ -906,8 +906,6 @@
               .swiper-pagination-02 {
                 display: flex;
                 justify-content: space-between;
-                // position: absolute;
-                // top: 80%;
                 padding-top: 25px;
                 .custom_bullet {
                   width: 74px;
