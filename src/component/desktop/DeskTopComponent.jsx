@@ -546,7 +546,7 @@ export default function DeskTopComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>URL :</p>
-                        <p className='right-p'><a href='https://ji-jung-ho.github.io/kurly_react_230419/' target='_blank' rel='noopener noreferrer'>홈페이지 바로가기</a></p>
+                        <p className='right-p'><a href='https://ji-jung-ho.github.io/kurly_react_deploy/' target='_blank' rel='noopener noreferrer'>홈페이지 바로가기</a></p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>배포 :</p>
@@ -593,7 +593,7 @@ export default function DeskTopComponent () {
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>URL :</p>
-                        <p className='right-p'><a href='https://kiik52.com/kurly' target='_blank' rel='noopener noreferrer'>홈페이지 바로가기</a></p>
+                        <p className='right-p'><a href='https://ji-jung-ho.github.io/portfolio_deploy/' target='_blank' rel='noopener noreferrer'>홈페이지 바로가기</a></p>
                       </div>
                       <div className='detail'>
                         <p className='left-p'><span>🔺</span>배포 :</p>
